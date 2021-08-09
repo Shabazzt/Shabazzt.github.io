@@ -1,0 +1,43 @@
+input{
+    outline: none;
+    border: none;
+    background-color: #D3D3D3;
+}
+form.search{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    width: 300px;
+    background-color: #D3D3D3;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    border-radius: 25px;
+}
+label{
+    position: relative;
+    cursor: pointer;
+    transition:transform;
+    fill:#FFF0F5;
+}
+label:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+    fill:black;
+}
+
+input[type="submit"]{
+    transition: transform;
+    color:#FFF0F5;
+    font-size: 15px;
+}
+input[type="submit"]:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+    color:black;
+}
+input[type="reset"]{
+    display: none;
+}
+
