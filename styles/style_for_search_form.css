@@ -1,43 +1,50 @@
-input{
+input {
     outline: none;
     border: none;
-    background-color: #D3D3D3;
+    background-color: white;
+    font-size: 20px;
 }
-form.search{
+
+form.search {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: space-around;
     height: 40px;
-    width: 300px;
-    background-color: #D3D3D3;
+    width: 330px;
+    background-color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     border-radius: 25px;
+    margin: 0 20px 0 0;
 }
-label{
+
+label {
     position: relative;
     cursor: pointer;
-    transition:transform;
-    fill:#FFF0F5;
-}
-label:hover{
-    transform:scale(1.1);
-    cursor: pointer;
-    fill:black;
+    transition: transform;
+    fill: #FFF0F5;
 }
 
-input[type="submit"]{
-    transition: transform;
-    color:#FFF0F5;
-    font-size: 15px;
-}
-input[type="submit"]:hover{
-    transform:scale(1.1);
+label:hover {
+    transform: scale(1.1);
     cursor: pointer;
-    color:black;
+    fill: black;
 }
-input[type="reset"]{
+
+input[type="submit"] {
+    transition: transform;
+    color: #FFF0F5;
+    font-size: 15px;
+    background-color: white;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: black;
+}
+
+input[type="reset"] {
     display: none;
 }
-
