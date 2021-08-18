@@ -10,7 +10,9 @@
     margin: 0;
     text-decoration: none;
 }
-a img, link img, visited img {
+
+a img,
+link img,
+visited img {
     border: 0;
 }
-    
