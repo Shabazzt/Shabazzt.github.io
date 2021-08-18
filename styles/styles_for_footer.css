@@ -63,3 +63,12 @@
     position: relative;
     font-size: 14px;
 }
+
+.footer a {
+    transition: transform;
+}
+
+.footer a:hover {
+    transform: scale(1.2);
+    color: black;
+}

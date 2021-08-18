@@ -8,6 +8,7 @@
     margin: 5px 0 0 0;
     background-color: #778899;
     opacity: 0.8;
+    z-index: 2;
 }
 
 .logo {
@@ -29,6 +30,23 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    width: 40%;
     margin: 0 10px;
+}
+
+.navigation_title_section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: transform;
+    color: white;
+}
+
+.navigation_title_section:hover .drop_down_arrow {
+    fill: black;
+}
+
+.navigation_title_section:hover {
+    transform: scale(1.2);
+    color: black;
 }

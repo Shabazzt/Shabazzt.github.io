@@ -18,16 +18,14 @@ html {
 
 a {
     color: #D3D3D3;
-    transition: transform;
     font-size: 15px;
-}
-
-a:hover {
-    transform: scale(1.2);
-    color: black;
 }
 
 .section_title {
     margin: 0 0 0 10px;
     font-size: 20px;
+}
+
+ul {
+    list-style: none;
 }

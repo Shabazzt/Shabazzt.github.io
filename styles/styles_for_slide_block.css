@@ -20,8 +20,8 @@
     animation-duration: 50s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: normal;
-    /*animation-fill-mode: forwards;*/
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
     animation-delay: 5s;
     transition: transform;
 }
