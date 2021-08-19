@@ -1,0 +1,115 @@
+#enter_form {
+    display: none;
+    position: absolute;
+    width: 400px;
+    min-height: 500px;
+    flex-wrap: wrap;
+    background-color: #D3D3D3;
+    border-radius: 20px;
+    justify-content: center;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+#background {
+    display: none;
+    position: absolute;
+    background-color: black;
+    opacity: 0.75;
+    width: 100%;
+    min-height: 100%;
+    z-index: 3;
+}
+
+#enter_form.opened {
+    display: flex;
+}
+
+#background.opened {
+    display: block;
+}
+
+.enter_form_header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    color: #A9A9A9;
+    justify-content: center;
+}
+
+#enter_form label.close_form {
+    position: relative;
+    right: -125px;
+    top: -10px;
+}
+
+#enter_form label.close_form:hover svg {
+    fill: black;
+    cursor: pointer;
+}
+
+#enter_form button[id="close"] {
+    display: none;
+}
+
+#enter_form input[type="submit"] {
+    background-color: #8db300;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 40%;
+    align-self: center;
+}
+
+#enter_form input[type="submit"]:hover {
+    background-color: #00FF00;
+}
+
+.title_text {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.enter_form_personal_data {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.enter_form_personal_data input {
+    position: relative;
+    margin: 10px 20px;
+    background-color: #DCDCDC;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+}
+
+.enter_form_action_button {
+    position: relative;
+    padding: 10px;
+    margin: 10px 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    background-color: #AFEEEE;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.enter_form_action_button:hover {
+    background-color: #7FFFD4;
+}

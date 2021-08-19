@@ -1,32 +1,82 @@
-.drop_down_menu {
-    position: absolute;
-    width: 170px;
-    top: 35px;
-    right: 0;
-    z-index: 1;
-    background-color: #696969;
-    border-radius: 10px;
-}
-
-.drop_down_menu a {
-    color: white;
-}
-
-.drop_down_menu a:hover {
-    color: black;
-}
-
-.drop_down_menu li {
-    margin: 10px 0 10px 15px;
-    position: relative;
-}
-
-.drop_down_menu li:hover {
-    text-decoration: underline;
-}
-
-li[right_arrow]::after {
-    position: absolute;
-    content: "";
-    background: url('/Shabazzt.github.io/assets/pictures-for-slider/img/Dragon\ Age\ Origins.jpg') no-repeat right center;
-}
+    .drop_down_menu {
+        display: none;
+        position: absolute;
+        width: 190px;
+        top: 60px;
+        right: -50px;
+        z-index: 1;
+        background-color: #696969;
+        border-radius: 10px;
+    }
+    
+    .drop_down_menu a {
+        color: white;
+    }
+    
+    .drop_down_menu li {
+        margin: 10px 10px;
+        position: relative;
+        padding: 5px;
+    }
+    
+    .drop_down_menu li:hover {
+        background-color: #778899;
+    }
+    
+    [down_arrow]::after {
+        position: relative;
+        content: "";
+        top: 15px;
+        right: -5px;
+        width: 0;
+        height: 0;
+        border-top: 7px solid white;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+    }
+    
+    .navigation_title_section:hover>[down_arrow]::after {
+        border-top-color: black;
+    }
+    
+    .navigation_title_section:hover>.drop_down_menu {
+        display: block;
+    }
+    
+    [right_arrow]::after {
+        position: absolute;
+        content: "";
+        right: 5px;
+        top: 8px;
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-left: 7px solid white;
+        border-bottom: 7px solid transparent;
+    }
+    
+    li[right_arrow]:hover::after {
+        border-left-color: black;
+    }
+    
+    hr {
+        border: none;
+        height: 1px;
+        background-color: white;
+        margin: 0;
+    }
+    
+    .action_button {
+        position: relative;
+        background-color: #708090;
+        width: 150px;
+        border: 2px;
+        margin: 10px 20px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    
+    .action_button:hover {
+        cursor: pointer;
+        background-color: #C0C0C0;
+    }
