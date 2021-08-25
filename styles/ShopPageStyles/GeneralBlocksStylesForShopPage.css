@@ -1,0 +1,13 @@
+.catalogSearchContainer {
+    display: flex;
+    width: 100%;
+    margin-top: 65px;
+    position: relative;
+    justify-content: center;
+}
+
+.catalogMainContent {
+    display: flex;
+    position: relative;
+    width: 100%;
+}

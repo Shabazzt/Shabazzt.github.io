@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Игры на GameShopOnline</title>
-    <link rel="stylesheet" href="styles/ShopPageStyles/stylesForCatalogFiltersSideBar.css" ;>
-    <link rel="stylesheet" href="styles/ShopPageStyles/stylesForSearchContainer.css" ;>
-    <link rel="stylesheet" href="styles/ShopPageStyles/stylesForProductsList.css" ;>
-    <link rel="stylesheet" href="styles/FormsStyles/stylesForSearchForm.css" ;>
-    <link rel="stylesheet" href="styles/GeneralStyles/generalStyles.css" ;>
-    <link rel="stylesheet" href="styles/DropMenu/stylesForDropDownMenu.css" ;>
     <link rel="stylesheet" href="styles/GeneralStyles/standartResetStyles.css" ;>
+    <link rel="stylesheet" href="styles/GeneralStyles/generalStyles.css" ;>
+    <link rel="stylesheet" href="styles/FormsStyles/stylesForSearchForm.css" ;>
+    <link rel="stylesheet" href="styles/DropMenu/stylesForDropDownMenu.css" ;>
+    <link rel="stylesheet" href="styles/ShopPageStyles/GeneralBlocksStylesForShopPage.css" ;>
+    <link rel="stylesheet" href="styles/ShopPageStyles/stylesForCatalogFiltersSideBar.css" ;>
+    <link rel="stylesheet" href="styles/ShopPageStyles/stylesForCatalogFiltersSortingContainer.css" ;>
+    <link rel="stylesheet" href="styles/ShopPageStyles/stylesForProductsList.css" ;>
+    <link rel="stylesheet" href="styles/ShopPageStyles/stylesForSearchContainer.css" ;>
+
 </head>
 
 <body>
@@ -20,13 +23,20 @@
     <div class="container">
 
         <div class="catalogSearchContainer">
+            <div class="categoriesBtnBlock">
+                <div class="searchCategories" id="searchCategoriesOpenMenu">
+                    <button id="openChooseCategory" class="searchCategoriesActionButton">Экшн</button>
+                    <label for="openChooseCategory">
+                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>
+                    </label>
+                </div>
 
-            <div class="searchCategories">
-                <button id="chooseCategory" class="searchCategoriesActionButton">Экшн</button>
-                <label for="chooseCategory">
-                    <svg id="expendMore" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>
-                </label>
-
+                <div class="searchCategories closed" id="searchCategoriesCloseMenu">
+                    <button id="closeChooseCategory" class="searchCategoriesActionButton">Экшн</button>
+                    <label for="closeChooseCategory">
+                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z"/></svg>
+                    </label>
+                </div>
                 <div class="dropDownMenu" id="dropDownMenuCategories" ;>
                     <ul>
                         <li>Все игры</li>
@@ -43,6 +53,7 @@
                     </ul>
                 </div>
             </div>
+
             <!--Поиск-->
             <form class="search" onsubmit="return false" ;>
                 <label for="search">
@@ -60,26 +71,30 @@
 
         <!--Панель сортировки-->
         <div class="catalogFiltersSortingContainer">
-
             <div class="catalogFiltersSorting">
                 <!--Кнопка, открывающая sideBar сортировки-->
                 <div class="filtersStatus">
-                    <label for="closeFilterSideBar">
-                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 6h2v12H6zm3.5 6l8.5 6V6l-8.5 6zm6.5 2.14L12.97 12 16 9.86v4.28z"/></svg> 
-                    </label>
-                    <button class="sortingActionButton" id="closeFilterSideBar"></button>
-                    <label for="openFilterSideBar">
-                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 18l8.5-6L6 6v12zm2-8.14L11.03 12 8 14.14V9.86zM16 6h2v12h-2z"/></svg> 
-                    </label>
-                    <button class="sortingActionButton" id="openFilterSideBar"></button> Фильтры
+                    <div id="closeFilterSideBar" class="closed">
+                        <label for="closeFilterSideBar">
+                            <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 6h2v12H6zm3.5 6l8.5 6V6l-8.5 6zm6.5 2.14L12.97 12 16 9.86v4.28z"/></svg> 
+                        </label>
+                        <button class="sortingActionButton"></button>
+                    </div>
+                    <div id="openFilterSideBar">
+                        <label for="openFilterSideBar">
+                            <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 18l8.5-6L6 6v12zm2-8.14L11.03 12 8 14.14V9.86zM16 6h2v12h-2z"/></svg> 
+                        </label>
+                        <button class="sortingActionButton"></button>
+                    </div>
+                    <span id="filtersStatusText">Фильтры</span>
                 </div>
 
                 <!--Глобальная сортировка-->
                 <div class="filtersToggle">
-                    <span class="filtersToggleGeneralOption">Все</span>
-                    <span class="filtersToggleGeneralOption">Новинки</span>
-                    <span class="filtersToggleGeneralOption">Ожидаемые</span>
-                    <span class="filtersToggleGeneralOption">Со скидкой</span>
+                    <span class="filtersToggleGeneralOption" id="allProducts">Все</span>
+                    <span class="filtersToggleGeneralOption" id="newProducts">Новинки</span>
+                    <span class="filtersToggleGeneralOption" id="expectingProducts">Ожидаемые</span>
+                    <span class="filtersToggleGeneralOption" id="discountedProducts">Со скидкой</span>
                 </div>
 
                 <div class="sortBy">Сортировать по:
@@ -104,102 +119,19 @@
                     <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 20H4v-4h4v4zm0-6H4v-4h4v4zm0-6H4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4z"/></svg>
                 </div>
             </div>
-            <!--Каталог товаров-->
-            <div class="productsList">
-                <div class="product">
-                    <img src="assets/picturesForProductsList/Metro-Exodus.jpg">
-                    <div class="productPricesInfo">
-                        <p class="productTitle"> Metro-Exodus</p>
-                        <div class="productTitlePricesInfo">
-                            <span class="productTitlePricesDiscount">-33%</span>
-                            <div class="productTitlePricesPrice">
-                                <span class="productPrice">29,99$</span>
-                                <span class="productPriceDiscounted">20,09$</span>
-                            </div>
-                            <div class="basketIcon">
-                                <label for="AddToBasket">
-                                    <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
-                                </label>
-                                <button id="AddToBasket"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
 
-                <div class="product">
-                    <img src="assets/picturesForProductsList/Metro-Exodus.jpg">
-                    <div class="productPricesInfo">
-                        <p class="productTitle"> Metro-Exodus</p>
-                        <div class="productTitlePricesInfo">
-                            <span class="productTitlePricesDiscount">-33%</span>
-                            <div class="productTitlePricesPrice">
-                                <span class="productPrice">29,99$</span>
-                                <span class="productPriceDiscounted">20,09$</span>
-                            </div>
-                            <div class="basketIcon">
-                                <label for="AddToBasket">
-                                    <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
-                                </label>
-                                <button id="AddToBasket"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="assets/picturesForProductsList/Metro-Exodus.jpg">
-                    <div class="productPricesInfo">
-                        <p class="productTitle"> Metro-Exodus</p>
-                        <div class="productTitlePricesInfo">
-                            <span class="productTitlePricesDiscount">-33%</span>
-                            <div class="productTitlePricesPrice">
-                                <span class="productPrice">29,99$</span>
-                                <span class="productPriceDiscounted">20,09$</span>
-                            </div>
-                            <div class="basketIcon">
-                                <label for="AddToBasket">
-                                    <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
-                                </label>
-                                <button id="AddToBasket"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="assets/picturesForProductsList/Metro-Exodus.jpg">
-                    <div class="productPricesInfo">
-                        <p class="productTitle"> Metro-Exodus</p>
-                        <div class="productTitlePricesInfo">
-                            <span class="productTitlePricesDiscount">-33%</span>
-                            <div class="productTitlePricesPrice">
-                                <span class="productPrice">29,99$</span>
-                                <span class="productPriceDiscounted">20,09$</span>
-                            </div>
-                            <div class="basketIcon">
-                                <label for="AddToBasket">
-                                    <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
-                                </label>
-                                <button id="AddToBasket"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product"></div>
-                <div class="product"></div>
-                <div class="product"></div>
-                <div class="product"></div>
-                <div class="product"></div>
-                <div class="product"></div>
-
-            </div>
-
-            <div class="catalogFiltersSideBar">
-                <div class="filterItem">
-                    <div class="filterItemTitle" downArrow>
+        <!--Блок с сайдбаром и каталогом товаров-->
+        <div class="catalogMainContent">
+            <!--Сайдбар-->
+            <div class="catalogFiltersSideBar" id="filtersSideBar">
+                <div class="filterItem" downArrow>
+                    <div class="filterItemTitle" id="filterItemTitle">
                         <button type="reset"></button>
                         <span>Цена</span>
                     </div>
                     <div class="filterItemOptions">
-                        <div class="dropDownMenu">
+                        <div class="dropDownMenu" id="itemOptionsDropDownMenu">
                             <ul>
                                 <li>До 5$</li>
                                 <li>До 10$</li>
@@ -212,8 +144,8 @@
 
                     </div>
                 </div>
-                <div class="filterItem">
-                    <div class="filterItemTitle" downArrow>
+                <div class="filterItem" downArrow>
+                    <div class="filterItemTitle">
                         <button type="reset"></button>
                         <span>Система</span>
                     </div>
@@ -227,8 +159,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="filterItem">
-                    <div class="filterItemTitle" downArrow>
+                <div class="filterItem" downArrow>
+                    <div class="filterItemTitle">
                         <button type="reset"></button>
                         <span>Особенности</span>
                     </div>
@@ -244,8 +176,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="filterItem">
-                    <div class="filterItemTitle" downArrow>
+                <div class="filterItem" downArrow>
+                    <div class="filterItemTitle">
                         <button type="reset"></button>
                         <span>Язык</span>
                     </div>
@@ -259,8 +191,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="filterItem">
-                    <div class="filterItemTitle" downArrow>
+                <div class="filterItem" downArrow>
+                    <div class="filterItemTitle">
                         <button type="reset"></button>
                         <span>Дополнения</span>
                     </div>
@@ -274,14 +206,102 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
+            <!--Каталог товаров-->
+            <div class="productsList" id="productList">
+                <div class="product">
+                    <img src="assets/picturesForProductsList/Metro-Exodus.jpg">
+                    <div class="productPricesInfo">
+                        <p class="productTitle"> Metro-Exodus</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                    <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="assets/picturesForProductsList/Metro-Exodus.jpg">
+                    <div class="productPricesInfo">
+                        <p class="productTitle"> Metro-Exodus</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                    <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/picturesForProductsList/Metro-Exodus.jpg">
+                    <div class="productPricesInfo">
+                        <p class="productTitle"> Metro-Exodus</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                    <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/picturesForProductsList/Metro-Exodus.jpg">
+                    <div class="productPricesInfo">
+                        <p class="productTitle"> Metro-Exodus</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                    <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+
+            </div>
         </div>
     </div>
 
-
-    <script src="js/openDropDownMenuChooseCategory.js"></script>
+    <script src="js/open-closeDropDownMenuChooseCategory.js" ;></script>
+    <script src="js/open-closeCatalogFilterSideBar.js" ;></script>
+    <script src="js/underlineFiltersToggle.js" ;></script>
+    <script src="js/openFiltersItemOptionsMenu.js" ;></script>
 </body>
 
 </html>

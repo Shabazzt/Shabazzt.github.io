@@ -9,6 +9,10 @@
     column-gap: 20px;
 }
 
+.modificatedProductList {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .product {
     position: relative;
     display: flex;

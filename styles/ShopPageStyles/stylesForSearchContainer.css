@@ -1,36 +1,36 @@
-.catalogSearchContainer {
+.categoriesBtnBlock {
     display: flex;
-    width: 100%;
-    margin-top: 65px;
-    text-align: center;
     position: relative;
-    justify-content: center;
+    width: 20%;
+    background-color: #e0e0e0;
 }
 
 .searchCategories {
     display: flex;
+    position: relative;
     align-items: center;
-    width: 15%;
-    border: 1px solid;
+    width: 100%;
     border-radius: 2px;
+}
+
+.searchCategories.closed {
+    display: none;
 }
 
 .searchCategoriesActionButton {
     position: relative;
     width: 90%;
-    background-color: #A9A9A9;
     border: none;
     padding: 11px;
+    background-color: #e0e0e0;
 }
 
 .searchCategories label {
     position: relative;
     width: 10%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #A9A9A9;
 }
 
 .catalogSearchContainer form.search {
@@ -43,48 +43,16 @@
     background-color: #DCDCDC;
 }
 
-.catalogFiltersSortingContainer {
+.dropDownMenu.opened {
     display: flex;
+}
+
+.categoriesBtnBlock .dropDownMenu {
+    position: absolute;
     width: 100%;
-    flex-wrap: wrap;
-}
-
-.catalogFiltersSorting {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    border-bottom: 1px solid;
-}
-
-.filtersStatus {
-    position: relative;
-    width: 280px;
-}
-
-.filtersToggle {
-    display: flex;
-    width: 45%;
-    position: relative;
-}
-
-.filtersToggleGeneralOption {
-    margin: 0 0 0 20px;
-}
-
-.sortBy {
-    position: relative;
-    width: 25%;
-}
-
-.viewSwitch {
-    position: relative;
-    width: 10%;
-}
-
-.catalogSearchContainer .openedDropDownMenu {
-    display: block;
-    width: 15%;
-    min-width: 138px;
+    top: 40px;
+    left: 0;
+    border-radius: 0;
+    background-color: white;
+    color: #C0C0C0;
 }

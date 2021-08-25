@@ -20,7 +20,10 @@
     }
     
     .dropDownMenu li:hover {
-        background-color: #778899;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: black;
+        width: 100%;
     }
     
     [downArrow]::after {

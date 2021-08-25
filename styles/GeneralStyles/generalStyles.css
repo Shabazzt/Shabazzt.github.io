@@ -36,3 +36,11 @@ input {
     background-color: white;
     font-size: 20px;
 }
+
+.opened {
+    display: flex;
+}
+
+.closed {
+    display: none;
+}
