@@ -1,12 +1,12 @@
-.main_content {
+.indexMainContent {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     width: 100%;
-    background-color: #D3D3D3;
+    margin-top: 50px;
 }
 
-.recommendations_block {
+.recommendationsBlock {
     position: relative;
     width: 100%;
     height: 70%;

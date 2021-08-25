@@ -1,15 +1,15 @@
-html {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+body {
+    background-color: #D3D3D3;
 }
 
 .container {
     width: 100%;
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
-.section_name {
+.sectionName {
     position: relative;
     width: 90%;
     border-bottom: 1px solid #778899;
@@ -21,11 +21,18 @@ a {
     font-size: 15px;
 }
 
-.section_title {
+.sectionTitle {
     margin: 0 0 0 10px;
     font-size: 20px;
 }
 
 ul {
     list-style: none;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: white;
+    font-size: 20px;
 }

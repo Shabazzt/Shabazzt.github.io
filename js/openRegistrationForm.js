@@ -1,7 +1,7 @@
-let registrationForm = document.getElementById('registration_form');
+let registrationForm = document.getElementById('registrationForm');
 let registrationFormBackground = document.getElementById('background');
-let openRegistrationFormBtn = document.getElementById('create_new_account');
-let closeRegistrationFormBtn = document.getElementById('close_registration_form');
+let openRegistrationFormBtn = document.getElementById('createNewAccount');
+let closeRegistrationFormBtn = document.getElementById('closeRegistrationForm');
 
 openRegistrationFormBtn.addEventListener('click', openRegistrationForm);
 closeRegistrationFormBtn.addEventListener('click', closeRegistrationForm);

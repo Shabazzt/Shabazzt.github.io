@@ -1,17 +1,10 @@
-input {
-    outline: none;
-    border: none;
-    background-color: white;
-    font-size: 20px;
-}
-
 form.search {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: space-around;
     height: 40px;
-    width: 330px;
+    width: 325px;
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
@@ -19,32 +12,42 @@ form.search {
     margin: 0 20px 0 0;
 }
 
-label {
+form.search label[for="search"],
+[for="reset"] {
     position: relative;
     cursor: pointer;
     transition: transform;
     fill: #FFF0F5;
+    margin: 0 5px;
 }
 
-label:hover {
+form.search label[for="search"]:hover,
+[for="reset"]:hover {
     transform: scale(1.1);
     cursor: pointer;
     fill: black;
 }
 
-input[type="submit"] {
-    transition: transform;
+form.search input[type="search"] {
+    position: relative;
+    width: 200px;
+}
+
+form.search input[type="submit"] {
     color: #FFF0F5;
     font-size: 15px;
-    background-color: white;
+    background-color: black;
+    width: 75px;
+    height: 40px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-input[type="submit"]:hover {
-    transform: scale(1.1);
+form.search input[type="submit"]:hover {
     cursor: pointer;
-    color: black;
+    background-color: #808080;
 }
 
-input[type="reset"] {
+form.search input[type="reset"] {
     display: none;
 }

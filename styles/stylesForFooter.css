@@ -5,7 +5,7 @@
     bottom: 0;
 }
 
-.extra_information {
+.extraInformation {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -37,7 +37,7 @@
     margin: 0 5px;
 }
 
-.law_information {
+.lawInformation {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -47,13 +47,13 @@
     align-items: center;
 }
 
-.text_law_information {
+.textLawInformation {
     position: relative;
     width: 100%;
     margin: 0 0 0 15px;
 }
 
-.text_law_information a {
+.textLawInformation a {
     margin: 0 0 0 10px;
 }
 

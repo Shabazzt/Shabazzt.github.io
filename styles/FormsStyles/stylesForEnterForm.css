@@ -1,7 +1,8 @@
-#registration_form {
+#enterForm {
     display: none;
     position: absolute;
     width: 400px;
+    min-height: 500px;
     flex-wrap: wrap;
     background-color: #D3D3D3;
     border-radius: 20px;
@@ -14,15 +15,11 @@
     margin: auto;
 }
 
-#registration_form.opened {
+#enterForm.opened {
     display: flex;
 }
 
-#background.opened {
-    display: block;
-}
-
-.registration_form_header {
+.enterFormHeader {
     display: flex;
     position: relative;
     width: 100%;
@@ -31,38 +28,36 @@
     justify-content: center;
 }
 
-#registration_form label.close_form {
+#enterForm label.closeForm {
     position: relative;
-    right: -70px;
+    right: -125px;
     top: -10px;
 }
 
-#registration_form label.close_form:hover svg {
+#enterForm label.closeForm:hover svg {
     fill: black;
     cursor: pointer;
 }
 
-#registration_form button[id="close"] {
+#enterForm button[id="close"] {
     display: none;
 }
 
-#registration_form input[type="submit"] {
+#enterForm input[type="submit"] {
     background-color: #8db300;
     color: white;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 2px;
-    padding: 15px;
+    width: 40%;
+    align-self: center;
 }
 
-#registration_form input[type="submit"]:hover {
+#enterForm input[type="submit"]:hover {
     background-color: #00FF00;
 }
 
-.title_text {
+.titleText {
     text-align: center;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -70,40 +65,37 @@
     text-transform: uppercase;
 }
 
-.registration_form_personal_data {
+.enterFormPersonalData {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
 }
 
-.registration_form_personal_data input {
+.enterFormPersonalData input {
     position: relative;
-    padding: 10px;
     margin: 10px 20px;
     background-color: #DCDCDC;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
 }
 
-.registration_form_text {
+.enterFormActionButton {
     position: relative;
-    width: 100%;
-    margin: 20px 10px;
-    text-align: center;
+    padding: 10px;
+    margin: 10px 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    background-color: #AFEEEE;
+    border: none;
+    border-radius: 10px;
+    color: white;
 }
 
-#background {
-    display: none;
-    position: absolute;
-    background-color: black;
-    opacity: 0.75;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-}
-
-#registration_form a {
-    color: #FF6347;
-    text-decoration: underline;
+.enterFormActionButton:hover {
+    background-color: #7FFFD4;
 }
