@@ -1,7 +1,7 @@
 .catalogSearchContainer {
     display: flex;
     width: 100%;
-    margin-top: 65px;
+    margin: 100px 0 40px 0;
     position: relative;
     justify-content: center;
 }

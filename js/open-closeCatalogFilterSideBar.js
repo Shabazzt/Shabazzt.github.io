@@ -8,7 +8,7 @@ const productList = document.getElementById('productList');
 //Обработчики на кнопки
 openFilterSideBarBtn.addEventListener('click', openFilterSideBar);
 closeFilterSideBarBtn.addEventListener('click', closeFilterSideBar);
-filtersStatusTextBtn.addEventListener('click', );
+filtersStatusTextBtn.addEventListener('click', openFilterSideBar);
 //Функции
 function openFilterSideBar() {
     filtersSideBar.classList.add('opened');

@@ -1,0 +1,20 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+label svg.check {
+    display: none;
+}
+
+input[type="checkbox"]:checked+label svg.check {
+    display: inline-block;
+    fill: #800080;
+}
+
+input[type="checkbox"]:checked+label .optionName {
+    color: #800080;
+}
+
+input[type="checkbox"]:checked+label svg.uncheck {
+    display: none;
+}
