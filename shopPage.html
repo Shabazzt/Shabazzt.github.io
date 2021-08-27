@@ -225,27 +225,76 @@
                 <span class="filtersToggleGeneralOption" id="expectingProducts">Ожидаемые</span>
                 <span class="filtersToggleGeneralOption" id="discountedProducts">Со скидкой</span>
             </div>
-
-            <div class="sortBy">Сортировать по:
-                <button id="sortBy" class="sortByActionButton"></button>
-                <label for="sortBy">
+            <!--Сортировка по выбранному критерию-->
+            <form method="" action="" onsubmit="return false" class="sortBy">Сортировать по:
+                <span id="sortBySelected" class="sortByActionWindow">Бестселлерам</span>
+                <label for="sortBySelected" id="sortBySelectedLabel">
                     <svg id="expendMore" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>
                 </label>
-                <div class="dropDownMenu">
+                <div class="dropDownMenu" id="sortByDropDownMenu">
                     <ul>
-                        <li>Бестселлерам</li>
-                        <li>Названию</li>
-                        <li>Пользовательскому рейтингу</li>
-                        <li>Дате добавления</li>
-                        <li>Популярности</li>
-                        <li>Сначала старые</li>
-                        <li>Сначала новые</li>
+                        <li id="sortByBestseller">
+                            <input type="checkbox" id="sortByBestsellerCheckbox"></input>
+                            <label for="sortByBestsellerCheckbox">
+                                <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                                <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
+                                <span class="sortByOptions optionName">Бестселлерам</span>
+                            </label>
+                        </li>
+                        <li id="sortByName">
+                            <input type="checkbox" id="sortByNameCheckbox"></input>
+                            <label for="sortByNameCheckbox">
+                                <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                                <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
+                                <span class="sortByOptions optionName">Названию</span>
+                            </label>
+                        </li>
+                        <li id="sortByUserRating">
+                            <input type="checkbox" id="sortByUserRatingCheckbox"></input>
+                            <label for="sortByUserRatingCheckbox">
+                                <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                                <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
+                                <span class="sortByOptions optionName">Пользовательскому рейтингу</span>
+                            </label>
+                        </li>
+                        <li id="sortByDate">
+                            <input type="checkbox" id="sortByDateCheckbox"></input>
+                            <label for="sortByDateCheckbox">
+                                <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                                <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
+                                <span class="sortByOptions optionName">Дате добавления</span>
+                            </label>
+                        </li>
+                        <li id="sortByPopularity">
+                            <input type="checkbox" id="sortByPopularityCheckbox"></input>
+                            <label for="sortByPopularityCheckbox">
+                                <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                                <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
+                                <span class="sortByOptions optionName">Популярности</span>
+                            </label>
+                        </li>
+                        <li id="sortByStartFromOld">
+                            <input type="checkbox" id="sortByStartFromOldCheckbox"></input>
+                            <label for="sortByStartFromOldCheckbox">
+                                <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                                <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
+                                <span class="sortByOptions optionName">Сначала старые</span>
+                            </label>
+                        </li>
+                        <li id="sortByStartFromNew">
+                            <input type="checkbox" id="sortByStartFromNewCheckbox"></input>
+                            <label for="sortByStartFromNewCheckbox">
+                                <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                                <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
+                                <span class="sortByOptions optionName">Сначала новые</span>
+                            </label>
+                        </li>
                     </ul>
                 </div>
-            </div>
+            </form>
             <div class="viewSwitch">
-                <svg height="27px" viewBox="0 0 24 24" width="32px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M3,5v14h18V5H3z M7,7v2H5V7H7z M5,13v-2h2v2H5z M5,15h2v2H5V15z M19,17H9v-2h10V17z M19,13H9v-2h10V13z M19,9H9V7h10V9z"/></svg>
-                <svg height="20px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 20H4v-4h4v4zm0-6H4v-4h4v4zm0-6H4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4z"/></svg>
+                <svg id="listView" height="27px" viewBox="0 0 24 24" width="32px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M3,5v14h18V5H3z M7,7v2H5V7H7z M5,13v-2h2v2H5z M5,15h2v2H5V15z M19,17H9v-2h10V17z M19,13H9v-2h10V13z M19,9H9V7h10V9z"/></svg>
+                <svg id="blockView" height="20px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 20H4v-4h4v4zm0-6H4v-4h4v4zm0-6H4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4z"/></svg>
             </div>
         </div>
         <hr>
@@ -253,13 +302,18 @@
         <div class="catalogMainContent">
             <!--Сайдбар-->
             <div class="catalogFiltersSideBar" id="filtersSideBar">
-                <div class="filterItem" id="filterItemPrice" downArrow>
+                <form method="" action="" onsubmit="return false" class="filterItem" id="filterItemPrice" downArrow>
+                    <div class="resetOptionsBlock">
+                        <label for="resetPriceOptions">
+                            <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                        </label>
+                        <input type="reset" id="resetPriceOptions"></input>
+                    </div>
+
                     <div class="filterItemTitle" id="filterItemTitlePriceOpen">
-                        <button type="reset"></button>
                         <span>Цена</span>
                     </div>
                     <div class="filterItemTitle closed" id="filterItemTitlePriceClose">
-                        <button type="reset"></button>
                         <span>Цена</span>
                     </div>
                     <div class="filterItemOptions">
@@ -316,8 +370,8 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="filterItem" id="filterItemSystem" downArrow>
+                </form>
+                <form class="filterItem" id="filterItemSystem" downArrow>
                     <div class="filterItemTitle" id="filterItemTitleSystemOpen">
                         <button type="reset"></button>
                         <span>Система</span>
@@ -356,8 +410,8 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="filterItem" id="filterItemFeatures" downArrow>
+                </form>
+                <form class="filterItem" id="filterItemFeatures" downArrow>
                     <div class="filterItemTitle" id="filterItemTitleFeaturesOpen">
                         <button type="reset"></button>
                         <span>Особенности</span>
@@ -412,8 +466,8 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="filterItem" id="filterItemLanguages" downArrow>
+                </form>
+                <form class="filterItem" id="filterItemLanguages" downArrow>
                     <div class="filterItemTitle" id="filterItemTitleLanguagesOpen">
                         <button type="reset"></button>
                         <span>Язык</span>
@@ -452,8 +506,8 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="filterItem" id="filterItemDlc" downArrow>
+                </form>
+                <form class="filterItem" id="filterItemDlc" downArrow>
                     <div class="filterItemTitle" id="filterItemTitleDlcOpen">
                         <button type="reset"></button>
                         <span>Дополнения</span>
@@ -472,7 +526,6 @@
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Оригинальные</span>
                                     </label>
-
                                 </li>
                                 <li>
                                     <input type="checkbox" id="checkBoxFans"></input>
@@ -481,7 +534,6 @@
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">От фанатов</span>
                                     </label>
-
                                 </li>
                                 <li>
                                     <input type="checkbox" id="checkBoxLatest"></input>
@@ -490,12 +542,11 @@
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Последние</span>
                                     </label>
-
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
 
             <!--Каталог товаров-->
@@ -686,6 +737,7 @@
     <script src="js/openFiltersItemOptionsMenu.js" ;></script>
     <script src="js/openEnterForm.js" ;></script>
     <script src="js/openRegistrationForm.js" ;></script>
+    <script src="js/open-closeSortByDropDowmMenu.js"></script>
 </body>
 
 </html>

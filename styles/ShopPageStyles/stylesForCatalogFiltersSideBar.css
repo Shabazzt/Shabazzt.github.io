@@ -10,6 +10,8 @@
 }
 
 .filterItem {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     width: 255px;
     border-bottom: 1px solid;
@@ -27,8 +29,8 @@
 
 .filterItemTitle {
     position: relative;
-    width: 100%;
-    margin: 5px 0;
+    width: 85%;
+    margin: 5px 0 5px 5px;
 }
 
 .filterItem[downArrow]::after,
@@ -56,4 +58,12 @@
 
 .optionName {
     margin-left: 5px;
+}
+
+input[type="reset"] {
+    display: none;
+}
+
+.resetOptionsBlock {
+    display: none;
 }

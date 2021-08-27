@@ -17,3 +17,7 @@ link img,
 visited img {
     border: 0;
 }
+
+a {
+    color: white;
+}
