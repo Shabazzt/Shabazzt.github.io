@@ -134,3 +134,7 @@ function closeFilterItemOptionsDlc() {
     filterItemDlc.removeAttribute("upArrow");
     filterItemDlc.setAttribute("downArrow", "downArrow");
 }
+
+filterItemPrice.addEventListener('change', (e) => {
+    console.log(e)
+})

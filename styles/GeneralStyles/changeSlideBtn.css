@@ -1,0 +1,18 @@
+.changeSlideBtn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 45%;
+    z-index: 2;
+    border-radius: 100%;
+    background-color: white;
+    cursor: pointer;
+}
+
+[next] {
+    right: -45px;
+}
+
+[previous] {
+    left: -45px;
+}

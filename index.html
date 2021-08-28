@@ -6,25 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameShopOnline</title>
-    <link rel="stylesheet" href="styles/GeneralStyles/standartResetStyles.css" ;>
+    <link rel="stylesheet" href="styles/GeneralStyles/resetStyles.css" ;>
     <link rel="stylesheet" href="styles/GeneralStyles/generalStyles.css" ;>
-    <link rel="stylesheet" href="styles/stylesForHeader.css" ;>
-    <link rel="stylesheet" href="styles/IndexStyles/stylesForIndexMainContentBlock.css" ;>
-    <link rel="stylesheet" href="styles/stylesForFooter.css" ;>
-    <link rel="stylesheet" href="styles/FormsStyles/stylesForSearchForm.css" ;>
-    <link rel="stylesheet" href="styles/IndexStyles/stylesForSlideBlock.css" ;>
-    <link rel="stylesheet" href="styles/IndexStyles/stylesForNewsBlock.css" ;>
-    <link rel="stylesheet" href="styles/DropMenu/stylesForDropDownMenu.css" ;>
-    <link rel="stylesheet" href="styles/FormsStyles/stylesForRegistrationForm.css" ;>
-    <link rel="stylesheet" href="styles/FormsStyles/stylesForEnterForm.css" ;>
-    <link rel="stylesheet" href="styles/DropMenu/stylesForBackgroundModalWindow.css" ;>
-    <link rel="stylesheet" href="styles/DropMenu/stylesForDropArrows.css" ;>
+    <link rel="stylesheet" href="styles/header.css" ;>
+    <link rel="stylesheet" href="styles/IndexStyles/indexMainContentBlock.css" ;>
+    <link rel="stylesheet" href="styles/footer.css" ;>
+    <link rel="stylesheet" href="styles/FormsStyles/searchForm.css" ;>
+    <link rel="stylesheet" href="styles/IndexStyles/slideBlock.css" ;>
+    <link rel="stylesheet" href="styles/DropMenu/dropDownMenu.css" ;>
+    <link rel="stylesheet" href="styles/FormsStyles/registrationForm.css" ;>
+    <link rel="stylesheet" href="styles/FormsStyles/enterForm.css" ;>
+    <link rel="stylesheet" href="styles/DropMenu/backgroundModalWindow.css" ;>
+    <link rel="stylesheet" href="styles/DropMenu/dropArrows.css" ;>
+    <link rel="stylesheet" href="styles/IndexStyles/informationsText.css" ;>
+    <link rel="stylesheet" href="styles/GeneralStyles/tooltip.css" ;>
+    <link rel="stylesheet" href="styles/IndexStyles/contentAreas.css" ;>
+    <link rel="stylesheet" href="styles/ShopPageStyles/productsList.css" ;>
+    <link rel="stylesheet" href="styles/GeneralStyles/changeSlideBtn.css" ;>
+    <link rel="stylesheet" href="styles/IndexStyles/discountNowBlock.css" ;>
+    <link rel="stylesheet" href="styles/IndexStyles/newsBlock.css" ;>
 </head>
 
 <body>
 
     <div class="container">
-
         <div class="header">
             <div class="logo"> <a href="index.html" target="blanc"><span>GameShopOnline <br> We play games professionally</span></a></div>
             <div class="navigation">
@@ -149,10 +154,10 @@
         </div>
 
         <div class="indexMainContent ">
-
+            <!--Рекомендуемое и слайдер-->
             <div class="recommendationsBlock ">
                 <p class="sectionName ">
-                    <svg height="24px " viewBox="0 0 24 24 " width="24px " fill="#000000 "><path d="M0 0h24v24H0V0z " fill="none "/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83
+                    <svg height="24px " viewBox="0 0 24 24 " width="24px " fill="white"><path d="M0 0h24v24H0V0z " fill="none "/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83
                     1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z "/>
                     </svg><span class="sectionTitle ">Рекомендуемое</span>
                 </p>
@@ -167,10 +172,514 @@
                     <div> <img src="assets/pictures-for-slider/Mass Effect 3.jpg "></div>
                 </div>
             </div>
-
-            <div class="newsBlock ">
+            <!--Текстовая вставка-->
+            <div class="extraInfoSection">
+                <div class="extraInfoSectionText">Мы — GameShopOnline, место c
+                    <div tooltip>лучшей коллекцией игр
+                        <div class="tooltipContainer">
+                            <div class="tooltipIcon"><svg height="35px" width="35px" viewBox="0 0 24 24" fill="#19ac9d"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4v12H8V4h12m0-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 9.67l1.69 2.26 2.48-3.1L19 15H9zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z"/></svg></div>
+                            <div class="tooltipHeader">Уникальная подборка игр</div>
+                            <div class="tooltipTextContent">Находить отличные игры — наша главная задача. Мы постоянно в поиске сокровищ для вас: от изумительных новинок до нестареющий классики.</div>
+                        </div>
+                    </div> , доступных
+                    <div tooltip>без DRM
+                        <div class="tooltipContainer">
+                            <div class="tooltipIcon"><svg height="24px" viewBox="0 0 24 24" width="24px" fill="#19ac9d"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h2c0-1.66 1.34-3 3-3s3 1.34 3 3v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg></div>
+                            <div class="tooltipHeader">Все Игры без DRM</div>
+                            <div class="tooltipTextContent">«Без DRM» — значит «без лишних ограничений». Ничто не стоит между вами и вашими играми.</div>
+                        </div>
+                    </div> . Почувствуйте себя как дома, если вы
+                    <div tooltip>
+                        <div class="tooltipContainer">
+                            <div class="tooltipIcon"><svg height="24px" viewBox="0 0 24 24" width="24px" fill="#19ac9d"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18.36 9l.6 3H5.04l.6-3h12.72M20 4H4v2h16V4zm0 3H4l-1 5v2h1v6h10v-6h4v6h2v-6h1v-2l-1-5zM6 18v-4h6v4H6z"/></svg></div>
+                            <div class="tooltipHeader">Больше, чем Магазин</div>
+                            <div class="tooltipTextContent">Платформа и сообщество для любящих игры, созданные такими же неравнодушными игроками. Добро пожаловать!</div>
+                        </div>неравнодушны к играм
+                    </div> так же, как и мы.
+                </div>
+                <div class="downloadNewApp">
+                    <svg height="24px" viewBox="0 0 24 24" width="24px" fill="url(#linear-gradient)">
+                        <linearGradient id="linear-gradient">
+                            <stop offset="33%" stop-color="#4b55f1"/>
+                            <stop offset="90%" stop-color="#e666e2"/>
+                            </linearGradient>
+                        <path d="M0 0h24v24H0V0z" fill="none"/><path d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm10 6c3.31 0 6-2.69 6-6s-2.69-6-6-6-6 2.69-6 6 2.69 6 6 6z"/></svg>
+                    <a href="" tooltip>
+                        <div class="tooltipContainer">
+                            <div class="tooltipIcon">
+                                <svg height="40px" viewBox="0 0 24 24" width="40px" fill="url(#linear-gradient)">
+                                    <linearGradient id="linear-gradient">
+                                        <stop offset="33%" stop-color="#4b55f1"/>
+                                        <stop offset="90%" stop-color="#e666e2"/>
+                                    </linearGradient>
+                                    <path d="M0 0h24v24H0V0z" fill="none"/><path d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm10 6c3.31 0 6-2.69 6-6s-2.69-6-6-6-6 2.69-6 6 2.69 6 6 6z"/>
+                                </svg>
+                            </div>
+                            <div class="tooltipHeader">Место для всех ваших игр и друзей</div>
+                            <div class="tooltipTextContent">Подключайте другие платформы к GameShopOnline 2.0 и объединяйте все ваши игры и друзей в одном приложении.</div>
+                        </div> Новый GameShopOnline 2.0
+                    </a>
+                </div>
+            </div>
+            <!--Демоверсии и грядущие релизы-->
+            <div class="contentContainers">
+                <label class="changeSlideBtn" for="nextSlidedemoAndFutures" next>
+                    <svg height="40px" viewBox="0 0 24 24" width="40px" fill="#0d2854"><g><rect fill="none" height="24" width="24"/></g><g><path d="M22,12c0-5.52-4.48-10-10-10C6.48,2,2,6.48,2,12s4.48,10,10,10C17.52,22,22,17.52,22,12z M4,12c0-4.42,3.58-8,8-8 c4.42,0,8,3.58,8,8s-3.58,8-8,8C7.58,20,4,16.42,4,12z M16,12l-4,4l-1.41-1.41L12.17,13H8v-2h4.17l-1.59-1.59L12,8L16,12z"/></g></svg>
+                </label>
+                <label class="changeSlideBtn" for="previousSlidedemoAndFutures" previous>
+                    <svg height="40px" viewBox="0 0 24 24" width="40px" fill="#0d2854"><g><rect fill="none" height="24" width="24"/></g><g><path d="M2,12c0,5.52,4.48,10,10,10c5.52,0,10-4.48,10-10S17.52,2,12,2C6.48,2,2,6.48,2,12z M20,12c0,4.42-3.58,8-8,8 c-4.42,0-8-3.58-8-8s3.58-8,8-8C16.42,4,20,7.58,20,12z M8,12l4-4l1.41,1.41L11.83,11H16v2h-4.17l1.59,1.59L12,16L8,12z"/></g></svg>
+                </label>
+                <button id="nextSlidedemoAndFuture"></button>
+                <button id="previousSlidedemoAndFutures"></button>
                 <p class="sectionName ">
-                    <svg viewBox="0 0 1000 1000 " width="30px " height="30px "><path d="M127,406.5c-14.4,4.2-28.9,8.2-43.3,12.2c-34.6,9.7-57.5,31.6-69.4,65.4c-1.5,4.4-1.1,9.4-4.3,13.3v32.6c5.8,10.4,6.3,22.3,9.6,33.5c10.8,35.6,34,58.2,69.8,68.5c34,9.8,64.9-6.2,98.4-10.2c-34.9-67.4-53.2-137.5-54.9-211.8C132.8,404.7,130.7,405.4,127,406.5z
+                    <svg height="24px" viewBox="0 0 24 24" width="24px" fill="white"><g><rect fill="none" height="24" width="24" y="0"/></g><g><path d="M19.48,12.35c-1.57-4.08-7.16-4.3-5.81-10.23c0.1-0.44-0.37-0.78-0.75-0.55C9.29,3.71,6.68,8,8.87,13.62 c0.18,0.46-0.36,0.89-0.75,0.59c-1.81-1.37-2-3.34-1.84-4.75c0.06-0.52-0.62-0.77-0.91-0.34C4.69,10.16,4,11.84,4,14.37 c0.38,5.6,5.11,7.32,6.81,7.54c2.43,0.31,5.06-0.14,6.95-1.87C19.84,18.11,20.6,15.03,19.48,12.35z M10.2,17.38 c1.44-0.35,2.18-1.39,2.38-2.31c0.33-1.43-0.96-2.83-0.09-5.09c0.33,1.87,3.27,3.04,3.27,5.08C15.84,17.59,13.1,19.76,10.2,17.38z"/></g></svg>
+                    </svg><span class="sectionTitle ">Демоверсии и грядущие релизы </span>
+                </p>
+                <div class=" contentArea demoAndFutures">
+                    <div class="product post-1">
+                        <img src="assets/picturesForProductsList/Pathfinder Wrath of the Righteous - Mythic Edition .jpg">
+                        <p class="productTitle"> Pathfinder: Wrath of the Righteous - Mythic Edition</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-2">
+                        <img src="assets/picturesForProductsList/TheLegendsofHeroes Trails into Reverie.jpg">
+                        <p class="productTitle"> TheLegendsofHeroes: Trails into Reverie</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-3">
+                        <img src="assets/picturesForProductsList/Syberia The World Before.jpg">
+                        <p class="productTitle"> Syberia: The World Before</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-4">
+                        <img src="assets/picturesForProductsList/Shadow Warrior 3.jpg">
+                        <p class="productTitle"> Shadow Warrior 3</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-5">
+                        <img src="assets/picturesForProductsList/The Smurfs (Die Schlümpfe) Mission Vileaf!.jpg">
+                        <p class="productTitle"> The Smurfs Mission Vileaf!</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-6">
+                        <img src="assets/picturesForProductsList/Metro-Exodus.jpg">
+                        <p class="productTitle"> High Rise City</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-7">
+                        <img src="assets/picturesForProductsList/Subverse.jpg">
+                        <p class="productTitle"> Subverse</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-8">
+                        <img src="assets/picturesForProductsList/XEL.png">
+                        <p class="productTitle"> XEL</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-9">
+                        <img src="assets/picturesForProductsList/Black Geyser Couriers of Darkness .jpg">
+                        <p class="productTitle"> Black Geyser Couriers of Darkness</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideIndicatorsBlock">
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                </div>
+            </div>
+            <!--Рекомендованные предложения-->
+            <div class="contentContainers">
+                <label class="changeSlideBtn" for="nextSlideRecomendatedOffers" next>
+                    <svg height="40px" viewBox="0 0 24 24" width="40px" fill="#0d2854"><g><rect fill="none" height="24" width="24"/></g><g><path d="M22,12c0-5.52-4.48-10-10-10C6.48,2,2,6.48,2,12s4.48,10,10,10C17.52,22,22,17.52,22,12z M4,12c0-4.42,3.58-8,8-8 c4.42,0,8,3.58,8,8s-3.58,8-8,8C7.58,20,4,16.42,4,12z M16,12l-4,4l-1.41-1.41L12.17,13H8v-2h4.17l-1.59-1.59L12,8L16,12z"/></g></svg>
+                </label>
+                <label class="changeSlideBtn" for="previousSlideRecomendatedOffers" previous>
+                    <svg height="40px" viewBox="0 0 24 24" width="40px" fill="#0d2854"><g><rect fill="none" height="24" width="24"/></g><g><path d="M2,12c0,5.52,4.48,10,10,10c5.52,0,10-4.48,10-10S17.52,2,12,2C6.48,2,2,6.48,2,12z M20,12c0,4.42-3.58,8-8,8 c-4.42,0-8-3.58-8-8s3.58-8,8-8C16.42,4,20,7.58,20,12z M8,12l4-4l1.41,1.41L11.83,11H16v2h-4.17l1.59,1.59L12,16L8,12z"/></g></svg>
+                </label>
+                <button id="nextSlideRecomendatedOffers"></button>
+                <button id="previousSlideRecomendatedOffers"></button>
+                <p class="sectionName ">
+                    <svg height="24px" viewBox="0 0 24 24" width="24px" fill="white"><g><rect fill="none" height="24" width="24" y="0"/></g><g><path d="M19.48,12.35c-1.57-4.08-7.16-4.3-5.81-10.23c0.1-0.44-0.37-0.78-0.75-0.55C9.29,3.71,6.68,8,8.87,13.62 c0.18,0.46-0.36,0.89-0.75,0.59c-1.81-1.37-2-3.34-1.84-4.75c0.06-0.52-0.62-0.77-0.91-0.34C4.69,10.16,4,11.84,4,14.37 c0.38,5.6,5.11,7.32,6.81,7.54c2.43,0.31,5.06-0.14,6.95-1.87C19.84,18.11,20.6,15.03,19.48,12.35z M10.2,17.38 c1.44-0.35,2.18-1.39,2.38-2.31c0.33-1.43-0.96-2.83-0.09-5.09c0.33,1.87,3.27,3.04,3.27,5.08C15.84,17.59,13.1,19.76,10.2,17.38z"/></g></svg>
+                    </svg><span class="sectionTitle ">Рекомендованные предложения</span>
+                </p>
+                <div class="contentArea recomendatedOffers">
+                    <div class="product post-1">
+                        <img src="assets/picturesForProductsList/1.jpeg">
+                        <p class="productTitle"> 1</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-2">
+                        <img src="assets/picturesForProductsList/2.jpeg">
+                        <p class="productTitle"> 2</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-3">
+                        <img src="assets/picturesForProductsList/3.jpg">
+                        <p class="productTitle"> 3</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-4">
+                        <img src="assets/picturesForProductsList/3.jpg">
+                        <p class="productTitle"> 3</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-5">
+                        <img src="assets/picturesForProductsList/5.jpg">
+                        <p class="productTitle"> 5</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-6">
+                        <img src="assets/picturesForProductsList/1.jpeg">
+                        <p class="productTitle"> 1</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-7">
+                        <img src="assets/picturesForProductsList/2.jpeg">
+                        <p class="productTitle"> 2</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-8">
+                        <img src="assets/picturesForProductsList/3.jpg">
+                        <p class="productTitle"> 3</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-9">
+                        <img src="assets/picturesForProductsList/1.jpeg">
+                        <p class="productTitle"> 1</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-10">
+                        <img src="assets/picturesForProductsList/5.jpg">
+                        <p class="productTitle"> 5</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product post-11">
+                        <img src="assets/picturesForProductsList/1.jpeg">
+                        <p class="productTitle"> 1</p>
+                        <div class="productTitlePricesInfo">
+                            <span class="productTitlePricesDiscount">-33%</span>
+                            <div class="productTitlePricesPrice">
+                                <span class="productPrice">29,99$</span>
+                                <span class="productPriceDiscounted">20,09$</span>
+                            </div>
+                            <div class="basketIcon">
+                                <label for="AddToBasket">
+                                        <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                    </label>
+                                <button id="AddToBasket"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideIndicatorsBlock">
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                </div>
+            </div>
+            <!--Сейчас со скидкой-->
+            <div class="contentContainers">
+                <label class="changeSlideBtn" for="nextSlideDiscountNowBlock" next>
+                    <svg height="40px" viewBox="0 0 24 24" width="40px" fill="#0d2854"><g><rect fill="none" height="24" width="24"/></g><g><path d="M22,12c0-5.52-4.48-10-10-10C6.48,2,2,6.48,2,12s4.48,10,10,10C17.52,22,22,17.52,22,12z M4,12c0-4.42,3.58-8,8-8 c4.42,0,8,3.58,8,8s-3.58,8-8,8C7.58,20,4,16.42,4,12z M16,12l-4,4l-1.41-1.41L12.17,13H8v-2h4.17l-1.59-1.59L12,8L16,12z"/></g></svg>
+                </label>
+                <label class="changeSlideBtn" for="previousSlideDiscountNowBlock" previous>
+                    <svg height="40px" viewBox="0 0 24 24" width="40px" fill="#0d2854"><g><rect fill="none" height="24" width="24"/></g><g><path d="M2,12c0,5.52,4.48,10,10,10c5.52,0,10-4.48,10-10S17.52,2,12,2C6.48,2,2,6.48,2,12z M20,12c0,4.42-3.58,8-8,8 c-4.42,0-8-3.58-8-8s3.58-8,8-8C16.42,4,20,7.58,20,12z M8,12l4-4l1.41,1.41L11.83,11H16v2h-4.17l1.59,1.59L12,16L8,12z"/></g></svg>
+                </label>
+                <button id="nextSlideDiscountNowBlock"></button>
+                <button id="previousSlideDiscountNowBlock"></button>
+                <p class="sectionName">
+                    <svg viewBox="0 0 74 74" width="24px" height="24px" fill="white"><path d="M28.726,72a4.13,4.13,0,0,1-1.066-.137c-1.931-.516-3.118-2.317-4.266-4.059a9.459,9.459,0,0,0-2.489-2.925,9.558,9.558,0,0,0-3.842-.718C15,64.035,12.87,63.9,11.484,62.517S9.966,59,9.839,56.938A9.574,9.574,0,0,0,9.12,53.1a9.44,9.44,0,0,0-2.926-2.49c-1.742-1.148-3.543-2.335-4.058-4.266-.5-1.852.445-3.739,1.354-5.565A9.7,9.7,0,0,0,4.813,37,9.706,9.706,0,0,0,3.49,33.225C2.581,31.4,1.641,29.512,2.136,27.66c.515-1.931,2.317-3.118,4.058-4.266A9.439,9.439,0,0,0,9.12,20.905a9.575,9.575,0,0,0,.718-3.842c.128-2.061.259-4.192,1.645-5.579S15,9.966,17.062,9.839A9.574,9.574,0,0,0,20.9,9.12,9.46,9.46,0,0,0,23.394,6.2c1.148-1.742,2.335-3.543,4.266-4.059,1.846-.491,3.739.445,5.566,1.354A9.7,9.7,0,0,0,37,4.813,9.7,9.7,0,0,0,40.774,3.49c1.827-.909,3.72-1.845,5.566-1.354,1.931.516,3.118,2.317,4.266,4.059A9.459,9.459,0,0,0,53.1,9.12a9.558,9.558,0,0,0,3.842.718c2.061.127,4.193.259,5.579,1.645S64.034,15,64.161,17.062A9.574,9.574,0,0,0,64.88,20.9a9.44,9.44,0,0,0,2.926,2.49c1.742,1.148,3.543,2.335,4.058,4.266.495,1.852-.445,3.739-1.354,5.565A9.7,9.7,0,0,0,69.187,37a9.706,9.706,0,0,0,1.323,3.775c.909,1.826,1.849,3.713,1.354,5.565-.515,1.931-2.317,3.118-4.058,4.266A9.439,9.439,0,0,0,64.88,53.1a9.575,9.575,0,0,0-.718,3.842c-.128,2.061-.259,4.192-1.645,5.579S59,64.034,56.938,64.161a9.574,9.574,0,0,0-3.842.719,9.46,9.46,0,0,0-2.49,2.925c-1.148,1.742-2.335,3.543-4.266,4.059-1.846.492-3.739-.445-5.566-1.354A9.7,9.7,0,0,0,37,69.187a9.7,9.7,0,0,0-3.774,1.323A10.725,10.725,0,0,1,28.726,72Zm0-68a2.132,2.132,0,0,0-.553.068c-1.2.32-2.17,1.8-3.114,3.227a10.676,10.676,0,0,1-3.156,3.556,10.837,10.837,0,0,1-4.72.984c-1.768.109-3.437.212-4.289,1.063s-.954,2.521-1.063,4.289a10.836,10.836,0,0,1-.983,4.72A10.686,10.686,0,0,1,7.3,25.063c-1.43.943-2.907,1.917-3.228,3.113-.3,1.121.436,2.6,1.213,4.157A11,11,0,0,1,6.813,37,11,11,0,0,1,5.28,41.667C4.5,43.229,3.769,44.7,4.067,45.824c.321,1.2,1.8,2.17,3.228,3.113a10.69,10.69,0,0,1,3.556,3.157,10.837,10.837,0,0,1,.984,4.72c.109,1.768.212,3.437,1.063,4.289s2.521.954,4.289,1.063a10.822,10.822,0,0,1,4.72.983,10.686,10.686,0,0,1,3.156,3.556c.943,1.429,1.917,2.907,3.113,3.227,1.121.3,2.6-.434,4.158-1.212A10.993,10.993,0,0,1,37,67.187a10.993,10.993,0,0,1,4.666,1.533c1.562.778,3.039,1.512,4.158,1.212,1.2-.32,2.17-1.8,3.114-3.227a10.676,10.676,0,0,1,3.156-3.556,10.837,10.837,0,0,1,4.72-.984c1.768-.109,3.437-.212,4.289-1.063s.954-2.521,1.063-4.289a10.836,10.836,0,0,1,.983-4.72,10.686,10.686,0,0,1,3.556-3.156c1.43-.943,2.907-1.917,3.228-3.113.3-1.121-.436-2.6-1.213-4.157A11,11,0,0,1,67.187,37a11,11,0,0,1,1.533-4.667c.777-1.562,1.511-3.036,1.213-4.157-.321-1.2-1.8-2.17-3.228-3.113a10.69,10.69,0,0,1-3.556-3.157,10.837,10.837,0,0,1-.984-4.72c-.109-1.768-.212-3.437-1.063-4.289s-2.521-.954-4.289-1.063a10.822,10.822,0,0,1-4.72-.983A10.686,10.686,0,0,1,48.937,7.3c-.943-1.429-1.917-2.907-3.113-3.227-1.12-.3-2.595.434-4.158,1.212A10.993,10.993,0,0,1,37,6.813,10.993,10.993,0,0,1,32.334,5.28,9.35,9.35,0,0,0,28.729,4Z"/><path d="M44.972,51.031a5.77,5.77,0,1,1,4.294-9.62h0a5.767,5.767,0,0,1-4.294,9.62Zm0-9.537a3.769,3.769,0,1,0,2.809,1.252A3.753,3.753,0,0,0,44.968,41.494Z"/><path d="M29.033,34.505a5.77,5.77,0,1,1,4.294-9.62h0a5.767,5.767,0,0,1-4.294,9.62Zm0-9.537a3.769,3.769,0,1,0,2.81,1.252h0A3.767,3.767,0,0,0,29.029,24.968Z"/><path d="M23.673,50.984a1,1,0,0,1-.7-1.716L49.629,23.3a1,1,0,0,1,1.4,1.433L24.371,50.7A1,1,0,0,1,23.673,50.984Z"/></svg>
+                    </svg>
+                    <span class="sectionTitle">Сейчас со скидкой</span>
+                    <span class="sectionTitleToggles">Интересные предложения</span>
+                    <span class="sectionTitleToggles">Коллекция от Devolver</span>
+                    <span class="sectionTitleToggles">Коллекция от tinyBuild</span>
+                </p>
+                <div class="contentArea discountNowBlock">
+                    <div class="post-1 discountNowItem" style="background-image: url('assets/picturesForProductsList/8.jpg');">
+                        <div class="discountNowTitle">Коллекция от Devolver</div>
+                        <div class="discountNowDiscount">до<br><span>95%</span></div>
+                        <div class="discountNowTimer">Осталось:</div>
+                        <div class="discountNowAllOffers">Все предложения</div>
+                        <div class="opacityBackground colorBackground-1"></div>
+                    </div>
+                    <div class="post-2 discountNowItem" style="background-image: url('assets/picturesForProductsList/9.png');">
+                        <div class="discountNowTitle">Коллекция от tinyBuild</div>
+                        <div class="discountNowDiscount">до<br><span>75%</span></div>
+                        <div class="discountNowTimer">Осталось:</div>
+                        <div class="discountNowAllOffers">Все предложения</div>
+                        <div class="opacityBackground colorBackground-2"></div>
+                    </div>
+                    <div class="post-3 discountNowItem" style="background-image: url('assets/picturesForProductsList/10.jpg');">
+                        <div class="discountNowTitle">Коллекция от Kallypso</div>
+                        <div class="discountNowDiscount">до<br><span>55%</span></div>
+                        <div class="discountNowTimer">Осталось:</div>
+                        <div class="discountNowAllOffers">Все предложения</div>
+                        <div class="opacityBackground colorBackground-3"></div>
+                    </div>
+                    <div class="post-4 discountNowItem" style="background-image: url('assets/picturesForProductsList/11.jpg');">
+                        <div class="discountNowTitle">Bestsellers</div>
+                        <div class="discountNowDiscount">до<br><span>50%</span></div>
+                        <div class="discountNowTimer">Осталось:</div>
+                        <div class="discountNowAllOffers">Все предложения</div>
+                        <div class="opacityBackground colorBackground-4"></div>
+                    </div>
+                </div>
+                <div class="slideIndicatorsBlock">
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                </div>
+            </div>
+            <div class="linkShowAll"><a href="shopPage.html">Показать все 1200+ предложений</a></div>
+            <!--Новостной блок-->
+            <div class="contentContainers">
+                <label class="changeSlideBtn" for="nextSlideNewsBlock" next>
+                    <svg height="40px" viewBox="0 0 24 24" width="40px" fill="#0d2854"><g><rect fill="none" height="24" width="24"/></g><g><path d="M22,12c0-5.52-4.48-10-10-10C6.48,2,2,6.48,2,12s4.48,10,10,10C17.52,22,22,17.52,22,12z M4,12c0-4.42,3.58-8,8-8 c4.42,0,8,3.58,8,8s-3.58,8-8,8C7.58,20,4,16.42,4,12z M16,12l-4,4l-1.41-1.41L12.17,13H8v-2h4.17l-1.59-1.59L12,8L16,12z"/></g></svg>
+                </label>
+                <label class="changeSlideBtn" for="previousSlideNewsBlock" previous>
+                    <svg height="40px" viewBox="0 0 24 24" width="40px" fill="#0d2854"><g><rect fill="none" height="24" width="24"/></g><g><path d="M2,12c0,5.52,4.48,10,10,10c5.52,0,10-4.48,10-10S17.52,2,12,2C6.48,2,2,6.48,2,12z M20,12c0,4.42-3.58,8-8,8 c-4.42,0-8-3.58-8-8s3.58-8,8-8C16.42,4,20,7.58,20,12z M8,12l4-4l1.41,1.41L11.83,11H16v2h-4.17l1.59,1.59L12,16L8,12z"/></g></svg>
+                </label>
+                <button id="nextSlideNewsBlock"></button>
+                <button id="previousSlideNewsBlock"></button>
+                <p class="sectionName ">
+                    <svg viewBox="0 0 1000 1000" width="30px" height="30px" fill="white"><path d="M127,406.5c-14.4,4.2-28.9,8.2-43.3,12.2c-34.6,9.7-57.5,31.6-69.4,65.4c-1.5,4.4-1.1,9.4-4.3,13.3v32.6c5.8,10.4,6.3,22.3,9.6,33.5c10.8,35.6,34,58.2,69.8,68.5c34,9.8,64.9-6.2,98.4-10.2c-34.9-67.4-53.2-137.5-54.9-211.8C132.8,404.7,130.7,405.4,127,406.5z
                     M730.1,476.5c-17.6-112.6-50.6-220.7-97.8-324.4c-6.6-14.4-13.6-28.6-20.8-43.6c-2.3,2.2-3.7,3.4-5,4.8c-41.2,42.3-86.2,80.2-133.6,115.2c-92.6,68.3-192.6,123-300.9,162.3c-4.9,1.8-7.9,3.2-7.8,9.7c1.1,74.2,18.9,144,53.3,209.8c3,5.7,6.3,6.6,12.1,5.7c12.9-2,26-3.7,39-4.9c81.5-7.8,162.9-7.4,244.4,1.4c76.1,8.2,151,22.4,224,45.7c6.4,2,8.8,2.1,8.5-5.9C743.7,593.3,739.2,534.7,730.1,476.5z
                     M461.6,784.6c-2.9-29.6,3-57.8,12.4-85.6c5.3-15.8,9.5-31.8,8.5-48.8c-0.4-7.7-3.2-11.5-11.5-12.9c-28.8-5-57.8-6.5-84.8-7.2c-29.4,0.4-56.5,2-83.5,5.9c-16.4,2.4-32.9,5.1-48.5,10.9c-12,4.5-13.5,10.6-4.9,19.9c4.3,4.7,9.4,8.7,14,13.1c21.8,20.6,38.3,43.5,42.9,74.7c5.4,37,16.3,72.9,32.7,106.7c11.1,22.9,24.7,44,45.4,59.7c10.1,7.6,20.8,11.7,33.8,10.3c18-1.9,35.5-5,50.8-15.4c19.2-13,24.2-30.5,15-51.5C472.8,838.9,464.3,812.6,461.6,784.6z
                     M805,641.2c-1.7-20.7-3.3-41.4-5.2-62.1c-5.6-62.1-14.5-123.8-28.3-184.6c-24.3-107.2-63.1-209.4-107.6-309.6c-9.2-20.6-20.2-18.1-35.2-12.6c-7.3,2.7-9.8,7.8-5.7,16c9.4,18.8,18.5,37.9,26.7,57.2C721.2,313.3,761,488.2,765.1,670.9c0.1,3.5-0.1,7,2.8,9.8c8.6,8.4,17.9,4.3,26.9,1.5c7.6-2.4,11.4-8,11.1-16c-0.3-8.3-0.7-16.6-1.1-24.9C804.9,641.3,804.9,641.2,805,641.2z
@@ -178,18 +687,46 @@
                     M793.1,184.3c-5.2-3.6-7.6-3-10.4,2.7c-4.9,10-10.2,19.9-16.1,29.4c-3,4.9-1.6,7,2.6,9.7c16.6,11.1,31.5,24.4,43.3,40.5c50.6,69,56.4,141.9,17.5,218c-3.2,6.3-2.3,8.3,3.6,10.9c9,4,18,8.3,26.5,13.3c6.6,3.9,9.7,3.4,13.5-4c19-36.4,28.8-75,29.2-119.5c-0.5-13.1-1.6-29.7-5.2-46C883.4,273.8,848.4,222.3,793.1,184.3z "/>
                     </svg><span class="sectionTitle ">Новости</span>
                 </p>
-                <div class="newsLine ">
-                    <div class="newsItem "><img src="assets/pictures-for-news-line/Doki Doki Gravity Dive.jpg "></div>
-                    <div class="newsItem "><img src="assets/pictures-for-news-line/Dread Templar.jpg "></div>
-                    <div class="newsItem "><img src="assets/pictures-for-news-line/Greak Memories of Azur.jpg "></div>
-                    <div class="newsItem "><img src="assets/pictures-for-news-line/Mortal Shell.jpg "></div>
-                    <div class="newsItem "><img src="assets/pictures-for-news-line/PowerSlave Exhumed.jpg "></div>
+                <div class="contentArea newsBlock">
+                    <div class="post-1 newsBlockItem" style="background-image: url('assets/pictures-for-news-line/Doki\ Doki\ Gravity\ Dive.jpg')" ;>
+                        <div class="newsText">Игры KONAMI, доступные на GOG, получили обновление с поддержкой джойстиков</div>
+                        <div class="newsComments">
+                            <div class="commentsIcon">
+                                <svg height="24px" viewBox="0 0 511.072 511.072" width="24px" fill="white"><path d="m74.39 480.536h-36.213l25.607-25.607c13.807-13.807 22.429-31.765 24.747-51.246-36.029-23.644-62.375-54.751-76.478-90.425-14.093-35.647-15.864-74.888-5.121-113.482 12.89-46.309 43.123-88.518 85.128-118.853 45.646-32.963 102.47-50.387 164.33-50.387 77.927 0 143.611 22.389 189.948 64.745 41.744 38.159 64.734 89.63 64.734 144.933 0 26.868-5.471 53.011-16.26 77.703-11.165 25.551-27.514 48.302-48.593 67.619-46.399 42.523-112.042 65-189.83 65-28.877 0-59.01-3.855-85.913-10.929-25.465 26.123-59.972 40.929-96.086 40.929zm182-420c-124.039 0-200.15 73.973-220.557 147.285-19.284 69.28 9.143 134.743 76.043 175.115l7.475 4.511-.23 8.727c-.456 17.274-4.574 33.912-11.945 48.952 17.949-6.073 34.236-17.083 46.99-32.151l6.342-7.493 9.405 2.813c26.393 7.894 57.104 12.241 86.477 12.241 154.372 0 224.682-93.473 224.682-180.322 0-46.776-19.524-90.384-54.976-122.79-40.713-37.216-99.397-56.888-169.706-56.888z"/></svg>
+                                <span>1</span>
+                            </div>
+                            <div class="commentsDateTime"><span>1</span> дней назад</div>
+                        </div>
+                    </div>
+                    <div class="post-2 discountNowItem" style="background-image: url('assets/pictures-for-news-line/Mortal\ Shell.jpg');">
+                        <div class="newsText">Кризис в стане BioWare</div>
+                        <div class="newsComments">
+                            <div class="commentsIcon">
+                                <svg height="24px" viewBox="0 0 511.072 511.072" width="24px" fill="white"><path d="m74.39 480.536h-36.213l25.607-25.607c13.807-13.807 22.429-31.765 24.747-51.246-36.029-23.644-62.375-54.751-76.478-90.425-14.093-35.647-15.864-74.888-5.121-113.482 12.89-46.309 43.123-88.518 85.128-118.853 45.646-32.963 102.47-50.387 164.33-50.387 77.927 0 143.611 22.389 189.948 64.745 41.744 38.159 64.734 89.63 64.734 144.933 0 26.868-5.471 53.011-16.26 77.703-11.165 25.551-27.514 48.302-48.593 67.619-46.399 42.523-112.042 65-189.83 65-28.877 0-59.01-3.855-85.913-10.929-25.465 26.123-59.972 40.929-96.086 40.929zm182-420c-124.039 0-200.15 73.973-220.557 147.285-19.284 69.28 9.143 134.743 76.043 175.115l7.475 4.511-.23 8.727c-.456 17.274-4.574 33.912-11.945 48.952 17.949-6.073 34.236-17.083 46.99-32.151l6.342-7.493 9.405 2.813c26.393 7.894 57.104 12.241 86.477 12.241 154.372 0 224.682-93.473 224.682-180.322 0-46.776-19.524-90.384-54.976-122.79-40.713-37.216-99.397-56.888-169.706-56.888z"/></svg>
+                                <span>1</span>
+                            </div>
+                            <div class="commentsDateTime"><span>1</span> дней назад</div>
+                        </div>
+                    </div>
+                    <div class="post-3 discountNowItem" style="background-image: url('assets/pictures-for-news-line/PowerSlave\ Exhumed.jpg');">
+                        <div class="newsText">Сыграйте в демо Tropico 6</div>
+                        <div class="newsComments">
+                            <div class="commentsIcon">
+                                <svg height="24px" viewBox="0 0 511.072 511.072" width="24px" fill="white"><path d="m74.39 480.536h-36.213l25.607-25.607c13.807-13.807 22.429-31.765 24.747-51.246-36.029-23.644-62.375-54.751-76.478-90.425-14.093-35.647-15.864-74.888-5.121-113.482 12.89-46.309 43.123-88.518 85.128-118.853 45.646-32.963 102.47-50.387 164.33-50.387 77.927 0 143.611 22.389 189.948 64.745 41.744 38.159 64.734 89.63 64.734 144.933 0 26.868-5.471 53.011-16.26 77.703-11.165 25.551-27.514 48.302-48.593 67.619-46.399 42.523-112.042 65-189.83 65-28.877 0-59.01-3.855-85.913-10.929-25.465 26.123-59.972 40.929-96.086 40.929zm182-420c-124.039 0-200.15 73.973-220.557 147.285-19.284 69.28 9.143 134.743 76.043 175.115l7.475 4.511-.23 8.727c-.456 17.274-4.574 33.912-11.945 48.952 17.949-6.073 34.236-17.083 46.99-32.151l6.342-7.493 9.405 2.813c26.393 7.894 57.104 12.241 86.477 12.241 154.372 0 224.682-93.473 224.682-180.322 0-46.776-19.524-90.384-54.976-122.79-40.713-37.216-99.397-56.888-169.706-56.888z"/></svg>
+                                <span>1</span>
+                            </div>
+                            <div class="commentsDateTime"><span>1</span> дней назад</div>
+                        </div>
+                    </div>
                 </div>
-
+                <div class="slideIndicatorsBlock">
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                    <button class="slideIndicator"></button>
+                </div>
             </div>
-
         </div>
-
+        <!--Футер-->
         <div class="footer ">
             <div class="extraInformation ">
                 <div class="info ">
@@ -290,6 +827,7 @@
 
     <script src="js/openRegistrationForm.js " ;></script>
     <script src="js/openEnterForm.js " ;></script>
+    <script src="js/new.js"></script>
 </body>
 
 </html>
