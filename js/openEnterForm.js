@@ -12,12 +12,16 @@ switchToRegistrationFormBtn.addEventListener('click', switchToCreateNewAccount);
 function openEnterForm() {
     enterForm.classList.add('opened');
     enterFormBackground.classList.add('opened');
+    document.body.classList.add('hideScroll');
+
 }
 
 function closeEnterForm() {
     enterForm.classList.remove('opened');
     enterFormBackground.classList.remove('opened');
+    document.body.classList.remove('hideScroll');
 }
+
 
 function switchToCreateNewAccount() {
     closeEnterForm();

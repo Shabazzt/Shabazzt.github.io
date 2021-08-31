@@ -1,4 +1,5 @@
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
     display: none;
 }
 
@@ -6,15 +7,18 @@ label svg.check {
     display: none;
 }
 
-input[type="checkbox"]:checked+label svg.check {
+input[type="checkbox"]:checked+label svg.check,
+input[type="radio"]:checked+label svg.check {
     display: inline-block;
     fill: #800080;
 }
 
-input[type="checkbox"]:checked+label .optionName {
+input[type="checkbox"]:checked+label .optionName,
+input[type="radio"]:checked+label .optionName {
     color: #800080;
 }
 
-input[type="checkbox"]:checked+label svg.uncheck {
+input[type="checkbox"]:checked+label svg.uncheck,
+input[type="radio"]:checked+label svg.uncheck {
     display: none;
 }

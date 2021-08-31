@@ -10,9 +10,11 @@ registrationFormBackground.addEventListener('click', closeRegistrationForm);
 function openRegistrationForm() {
     registrationForm.classList.add('opened');
     registrationFormBackground.classList.add('opened');
+    document.body.classList.add('hideScroll');
 }
 
 function closeRegistrationForm() {
     registrationForm.classList.remove('opened');
     registrationFormBackground.classList.remove('opened');
+    document.body.classList.remove('hideScroll');
 }

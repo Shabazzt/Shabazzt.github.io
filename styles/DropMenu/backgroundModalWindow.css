@@ -12,3 +12,8 @@
     height: 100%;
     z-index: 3;
 }
+
+.hideScroll {
+    overflow: hidden;
+    padding-right: 15px;
+}
