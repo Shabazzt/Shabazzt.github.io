@@ -1,0 +1,52 @@
+.productCardBasics {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productCardBasicsInfoContainer {
+    display: flex;
+    position: relative;
+    background-color: #d1cfd2;
+    margin: 0 60px;
+}
+
+.productCardBasicsInfo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+    height: 30%;
+    padding: 40px 0;
+}
+
+.productCardTitle {
+    width: 100%;
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.productCardOsSupport {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.osIcon {
+    margin: 0 5px;
+}
+
+.productCardBasicsLanguages {
+    display: flex;
+    align-content: center;
+    margin: 0 15px;
+}

@@ -1,5 +1,5 @@
 body {
-    background-color: #0d2854;
+    background-color: #d0cfd1;
 }
 
 .container {
@@ -17,6 +17,7 @@ body {
 
 ul {
     list-style: none;
+    width: 100%;
 }
 
 input {

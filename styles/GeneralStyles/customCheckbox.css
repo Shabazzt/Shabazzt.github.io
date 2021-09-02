@@ -7,18 +7,18 @@ label svg.check {
     display: none;
 }
 
-input[type="checkbox"]:checked+label svg.check,
-input[type="radio"]:checked+label svg.check {
+label>input[type="checkbox"]:checked~svg.check,
+label>input[type="radio"]:checked~svg.check {
     display: inline-block;
     fill: #800080;
 }
 
-input[type="checkbox"]:checked+label .optionName,
-input[type="radio"]:checked+label .optionName {
+label>input[type="checkbox"]:checked~span,
+label>input[type="radio"]:checked~span {
     color: #800080;
 }
 
-input[type="checkbox"]:checked+label svg.uncheck,
-input[type="radio"]:checked+label svg.uncheck {
+label>input[type="checkbox"]:checked~svg.uncheck,
+label>input[type="radio"]:checked~svg.uncheck {
     display: none;
 }

@@ -6,22 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Игры на GameShopOnline</title>
+
+
+
     <link rel="stylesheet" href="styles/GeneralStyles/resetStyles.css" ;>
     <link rel="stylesheet" href="styles/GeneralStyles/generalStyles.css" ;>
-    <link rel="stylesheet" href="styles/FormsStyles/searchForm.css" ;>
-    <link rel="stylesheet" href="styles/FormsStyles/registrationForm.css" ;>
-    <link rel="stylesheet" href="styles/FormsStyles/enterForm.css" ;>
-    <link rel="stylesheet" href="styles/DropMenu/dropDownMenu.css" ;>
-    <link rel="stylesheet" href="styles/ShopPageStyles/generalBlocksStylesForShopPage.css" ;>
-    <link rel="stylesheet" href="styles/ShopPageStyles/catalogFiltersSideBar.css" ;>
-    <link rel="stylesheet" href="styles/ShopPageStyles/catalogFiltersSortingContainer.css" ;>
-    <link rel="stylesheet" href="styles/ShopPageStyles/productsList.css" ;>
-    <link rel="stylesheet" href="styles/ShopPageStyles/searchContainer.css" ;>
-    <link rel="stylesheet" href="styles/DropMenu/dropArrows.css" ;>
     <link rel="stylesheet" href="styles/GeneralStyles/customCheckbox.css" ;>
     <link rel="stylesheet" href="styles/header.css" ;>
     <link rel="stylesheet" href="styles/footer.css" ;>
+
+    <link rel="stylesheet" href="styles/FormsStyles/searchForm.css" ;>
+    <link rel="stylesheet" href="styles/FormsStyles/registrationForm.css" ;>
+    <link rel="stylesheet" href="styles/FormsStyles/enterForm.css" ;>
     <link rel="stylesheet" href="styles/DropMenu/backgroundModalWindow.css" ;>
+    <link rel="stylesheet" href="styles/DropMenu/dropArrows.css" ;>
+    <link rel="stylesheet" href="styles/DropMenu/dropDownMenu.css" ;>
+
+    <link rel="stylesheet" href="styles/ShopPageStyles/searchContainer.css" ;>
+    <link rel="stylesheet" href="styles/ShopPageStyles/catalogFiltersSideBar.css" ;>
+    <link rel="stylesheet" href="styles/ShopPageStyles/catalogFiltersSortingContainer.css" ;>
+    <link rel="stylesheet" href="styles/ShopPageStyles/generalBlocksStylesForShopPage.css" ;>
+    <link rel="stylesheet" href="styles/ShopPageStyles/productsList.css" ;>
+
+
+
 </head>
 
 <body>
@@ -180,47 +188,23 @@
                     </ul>
                 </div>
             </div>
-
-            <!--Поиск-->
-            <form class="search" onsubmit="return false" ;>
-                <label for="search">
-                    <svg height="20px" viewBox="0 0 24 24" width="20px" ><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                </label>
-                <input id="search" type="search" name="searchingText" value="" placeholder="Искать...">
-                <label for="reset">
-                    <svg height="20px" viewBox="0 0 24 24" width="20px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-                </label>
-                <input id="reset" type="reset" ;>
-                <input type="submit" value="Поиск" ;>
-            </form>
-
         </div>
 
         <!--Панель сортировки-->
         <div class="catalogFiltersSorting">
             <!--Кнопка, открывающая sideBar сортировки-->
-            <div class="filtersStatus">
-                <div id="closeFilterSideBar" class="closed">
-                    <label for="closeFilterSideBar">
-                            <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 6h2v12H6zm3.5 6l8.5 6V6l-8.5 6zm6.5 2.14L12.97 12 16 9.86v4.28z"/></svg> 
-                        </label>
-                    <button class="sortingActionButton"></button>
-                </div>
-                <div id="openFilterSideBar">
-                    <label for="openFilterSideBar">
-                            <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 18l8.5-6L6 6v12zm2-8.14L11.03 12 8 14.14V9.86zM16 6h2v12h-2z"/></svg> 
-                        </label>
-                    <button class="sortingActionButton"></button>
-                </div>
+            <div class="filtersStatus" id="filtersStatus">
+                <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 6h2v12H6zm3.5 6l8.5 6V6l-8.5 6zm6.5 2.14L12.97 12 16 9.86v4.28z"/></svg>
+                <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 18l8.5-6L6 6v12zm2-8.14L11.03 12 8 14.14V9.86zM16 6h2v12h-2z"/></svg>
                 <span id="filtersStatusText">Фильтры</span>
             </div>
 
             <!--Глобальная сортировка-->
             <div class="filtersToggle">
-                <span class="filtersToggleGeneralOption" id="allProducts">Все</span>
-                <span class="filtersToggleGeneralOption" id="newProducts">Новинки</span>
-                <span class="filtersToggleGeneralOption" id="expectingProducts">Ожидаемые</span>
-                <span class="filtersToggleGeneralOption" id="discountedProducts">Со скидкой</span>
+                <span class="filtersToggleOption">Все</span>
+                <span class="filtersToggleOption">Новинки</span>
+                <span class="filtersToggleOption">Ожидаемые</span>
+                <span class="filtersToggleOption">Со скидкой</span>
             </div>
             <!--Сортировка по выбранному критерию-->
             <div class="sortBy">Сортировать по:
@@ -230,60 +214,60 @@
                 </label>
                 <div class="dropDownMenu" id="sortByDropDownMenu">
                     <ul>
-                        <li id="sortByBestseller">
-                            <input type="radio" name="sortBy" value="bestsellers" id="sortByBestsellerCheckbox">
-                            <label for="sortByBestsellerCheckbox">
+                        <li>
+                            <label>
+                                <input type="radio" name="sortBy" value="bestsellers">
                                 <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                 <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
-                                <span class="sortByOptions optionName">Бестселлерам</span>
+                                <span class="optionName">Бестселлерам</span>
                             </label>
                         </li>
-                        <li id="sortByName">
-                            <input type="radio" name="sortBy" value="name" id="sortByNameCheckbox">
-                            <label for="sortByNameCheckbox">
+                        <li>
+                            <label>
+                                <input type="radio" name="sortBy" value="name">
                                 <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                 <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
-                                <span class="sortByOptions optionName">Названию</span>
+                                <span class="optionName">Названию</span>
                             </label>
                         </li>
-                        <li id="sortByUserRating">
-                            <input type="radio" name="sortBy" value="userRating" id="sortByUserRatingCheckbox">
-                            <label for="sortByUserRatingCheckbox">
+                        <li>
+                            <label>
+                                <input type="radio" name="sortBy" value="userRating">
                                 <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                 <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
-                                <span class="sortByOptions optionName">Пользовательскому рейтингу</span>
+                                <span class="optionName">Пользовательскому рейтингу</span>
                             </label>
                         </li>
-                        <li id="sortByDate">
-                            <input type="radio" name="sortBy" value="date" id="sortByDateCheckbox">
-                            <label for="sortByDateCheckbox">
+                        <li>
+                            <label>
+                                <input type="radio" name="sortBy" value="date">
                                 <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                 <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
-                                <span class="sortByOptions optionName">Дате добавления</span>
+                                <span class="optionName">Дате добавления</span>
                             </label>
                         </li>
-                        <li id="sortByPopularity">
-                            <input type="radio" name="sortBy" value="popularity" id="sortByPopularityCheckbox">
-                            <label for="sortByPopularityCheckbox">
+                        <li>
+                            <label>
+                                <input type="radio" name="sortBy" value="popularity">
                                 <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                 <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
-                                <span class="sortByOptions optionName">Популярности</span>
+                                <span class="optionName">Популярности</span>
                             </label>
                         </li>
-                        <li id="sortByStartFromOld">
-                            <input type="radio" name="sortBy" value="startFromOld" id="sortByStartFromOldCheckbox">
-                            <label for="sortByStartFromOldCheckbox">
+                        <li>
+                            <label>
+                                <input type="radio" name="sortBy" value="startFromOld">
                                 <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                 <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
-                                <span class="sortByOptions optionName">Сначала старые</span>
+                                <span class="optionName">Сначала старые</span>
                             </label>
                         </li>
-                        <li id="sortByStartFromNew">
-                            <input type="radio" name="sortBy" value="startFromNew" id="sortByStartFromNewCheckbox">
-                            <label for="sortByStartFromNewCheckbox">
+                        <li>
+                            <label>
+                                <input type="radio" name="sortBy" value="startFromNew">
                                 <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                 <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
-                                <span class="sortByOptions optionName">Сначала новые</span>
+                                <span class="optionName">Сначала новые</span>
                             </label>
                         </li>
                     </ul>
@@ -318,48 +302,48 @@
                         <div class="dropDownMenu" id="itemOptionsPriceDropDownMenu">
                             <ul>
                                 <li>
-                                    <input type="checkbox" id="checkBoxUntil-5" name="checkBoxUntil-5"></input>
-                                    <label for="checkBoxUntil-5">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class="check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">До 5$</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxUntil-10"></input>
-                                    <label for="checkBoxUntil-10">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">До 10$</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxUntil-15"></input>
-                                    <label for="checkBoxUntil-15">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">До 15$</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxUntil-20"></input>
-                                    <label for="checkBoxUntil-20">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">До 20$</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxDiscounted"></input>
-                                    <label for="checkBoxDiscounted">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Со скидкой</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxFree"></input>
-                                    <label for="checkBoxFree">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Бесплатно</span>
@@ -383,24 +367,24 @@
                         <div class="dropDownMenu" id="itemOptionsSystemDropDownMenu">
                             <ul>
                                 <li>
-                                    <input type="checkbox" id="checkBoxWindows"></input>
-                                    <label for="checkBoxWindows">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Windows</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxOSX"></input>
-                                    <label for="checkBoxOSX">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">OSX</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxLinux"></input>
-                                    <label for="checkBoxLinux">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Linux</span>
@@ -423,40 +407,40 @@
                         <div class="dropDownMenu" id="itemOptionsFeaturesDropDownMenu">
                             <ul>
                                 <li>
-                                    <input type="checkbox" id="checkBoxSingle"></input>
-                                    <label for="checkBoxSingle">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Одиночная</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxOnline"></input>
-                                    <label for="checkBoxOnline">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Сетевая</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxCooperative"></input>
-                                    <label for="checkBoxCooperative">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Кооперативный режим</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxAchivements"></input>
-                                    <label for="checkBoxAchivements">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Достижения</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxLeaderTable"></input>
-                                    <label for="checkBoxLeaderTable">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Таблицы лидера</span>
@@ -479,24 +463,24 @@
                         <div class="dropDownMenu" id="itemOptionsLanguagesDropDownMenu">
                             <ul>
                                 <li>
-                                    <input type="checkbox" id="checkBoxEnglish"></input>
-                                    <label for="checkBoxEnglish">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">English</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxRussian"></input>
-                                    <label for="checkBoxRussian">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Русский</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxDeutsch"></input>
-                                    <label for="checkBoxDeutsch">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Deutsch</span>
@@ -519,24 +503,24 @@
                         <div class="dropDownMenu" id="itemOptionsDlcDropDownMenu">
                             <ul>
                                 <li>
-                                    <input type="checkbox" id="checkBoxOriginal"></input>
-                                    <label for="checkBoxOriginal">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Оригинальные</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxFans"></input>
-                                    <label for="checkBoxFans">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">От фанатов</span>
                                     </label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="checkBoxLatest"></input>
-                                    <label for="checkBoxLatest">
+                                    <label>
+                                        <input type="checkbox"></input>
                                         <svg class ="uncheck" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                                         <svg class= "check" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"/></svg>
                                         <span class="optionName">Последние</span>
@@ -730,15 +714,16 @@
             <button class="enterFormActionButton">Продолжить с Google</button>
         </form>
     </div>
-    <script src="js/open-closeDropDownMenuChooseCategory.js" ;></script>
+    <script src="js/filtersToggleColotation.js" ;></script>
     <script src="js/open-closeCatalogFilterSideBar.js" ;></script>
-    <script src="js/underlineFiltersToggle.js" ;></script>
+    <script src="js/open-closeDropDownMenuChooseCategory.js" ;></script>
+    <script src="js/open-closeSortBy.js" ;></script>
     <script src="js/openEnterForm.js" ;></script>
+    <script src="js/openFiltersItemOptionsMenu.js" ;></script>
     <script src="js/openRegistrationForm.js" ;></script>
-    <script src="js/open-closeSortByDropDowmMenu.js"></script>
-    <script src="js/openFiltersItemOptionsMenu.js"></script>
-    <script src="js/open-closeCatalogFilterSideBar.js"></script>
-    <script src="js/colorationAndUnderline.js"></script>
+
+
+
 </body>
 
 </html>

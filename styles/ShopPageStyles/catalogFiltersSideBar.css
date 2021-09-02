@@ -40,6 +40,14 @@
     right: 0;
 }
 
+.filterItemOptions {
+    width: 100%;
+}
+
+.filterItemOptions label {
+    width: 100%;
+}
+
 .filterItemOptions .dropDownMenu {
     position: relative;
     width: 100%;
@@ -51,6 +59,7 @@
 
 .filterItemOptions .dropDownMenu li {
     display: flex;
+    width: 100%;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -58,6 +67,7 @@
 
 .optionName {
     margin-left: 5px;
+    width: 100%;
 }
 
 input[type="reset"] {

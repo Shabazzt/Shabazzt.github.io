@@ -1,5 +1,6 @@
 .catalogFiltersSorting {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -7,7 +8,7 @@
 
 .filtersStatus {
     position: relative;
-    width: 280px;
+    width: 190px;
     display: flex;
     position: relative;
     align-items: center;
@@ -25,7 +26,7 @@ label {
     position: relative;
 }
 
-.filtersToggleGeneralOption {
+.filtersToggleOption {
     margin: 0 0 0 30px;
     cursor: pointer;
     height: 100%;
@@ -46,10 +47,6 @@ label {
     color: #800080;
     margin: 0 0 5px 5px;
     text-align: center;
-}
-
-span .sortByOptions {
-    width: 100%;
 }
 
 .sortBy .dropDownMenu {

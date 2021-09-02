@@ -1,0 +1,111 @@
+.descriptionBlock {
+    display: flex;
+    margin: 30px 50px;
+    font-family: 'Azeret Mono', monospace;
+}
+
+.description {
+    position: relative;
+    width: 55%;
+}
+
+.title {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    border-bottom: 1px solid #bfbfbf;
+    margin-bottom: 20px;
+}
+
+.underlineText {
+    position: relative;
+    padding: 16px 0;
+    line-height: 12px;
+    border-bottom: 1px solid;
+    margin-bottom: -1px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.module {
+    padding: 15px;
+    margin-top: 5px;
+    position: relative;
+    background-color: #e9e9e9;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+    font-weight: 600;
+    display: block;
+}
+
+.description hr {
+    border-bottom: 1px solid #bfbfbf;
+    margin: .5em 0;
+}
+
+.description img:nth-of-type(n) {
+    margin: auto;
+    max-width: 100%;
+}
+
+.description .text {
+    width: 100%;
+    text-align: justify;
+    margin: 0 0 20px 0;
+}
+
+.description video {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+li {
+    color: black;
+    list-style: disc;
+}
+
+li .title {
+    border-bottom: none;
+}
+
+b {
+    font-weight: bold;
+}
+
+.summarySection {
+    width: 40%;
+    margin: 0 0 0 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.summarySection a {
+    color: black;
+    text-decoration: underline;
+    position: relative;
+}
+
+.details {
+    display: flex;
+    padding: 15px 0;
+}
+
+.detailsCategory {
+    width: 110px;
+    color: rgba(33, 33, 33, .7);
+    margin: 0 0 0 5px;
+}
+
+.details:hover {
+    background: hsla(0, 0%, 100%, .2);
+    border-left: 1px solid #78387b;
+}
+
+.detailsContent {
+    width: calc(100% - 110px);
+    text-align: start;
+}
