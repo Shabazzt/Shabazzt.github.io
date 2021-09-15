@@ -1,6 +1,5 @@
 .productsList {
     position: relative;
-    width: 100%;
     margin: 20px 35px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -17,8 +16,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #294b76;
-    color: white;
+    background-color: #ededed;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .15);
+    color: black;
     justify-content: space-between;
 }
 
@@ -32,7 +32,13 @@
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    margin: 10px 0 15px 0;
+    margin: 10px 0 15px 10px;
+    align-items: flex-start;
+}
+
+.productPricesInfo {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .productTitlePricesInfo {
@@ -46,7 +52,7 @@
     position: relative;
     width: 50px;
     padding: 8px 4px;
-    background-color: #C71585;
+    background-color: #6d1d72;
     text-align: center;
     border-radius: 8px;
     font-weight: 700;
@@ -72,7 +78,7 @@
 
 .basketIcon {
     display: flex;
-    background-color: #3CB371;
+    background: linear-gradient(-180deg, #9fbf00, #80ab00 91%);
     justify-content: center;
     align-items: center;
     margin-right: 10px;
@@ -80,7 +86,7 @@
 }
 
 .basketIcon:hover {
-    background-color: #7FFF00;
+    background: linear-gradient(180deg, #a7c900, #88b500);
 }
 
 .basketIcon label {

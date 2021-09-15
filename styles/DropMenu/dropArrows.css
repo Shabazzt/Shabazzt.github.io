@@ -1,10 +1,8 @@
 [rightArrow]::after {
     position: absolute;
     content: "";
-    right: 5px;
-    top: 8px;
-    width: 0;
-    height: 0;
+    right: 20px;
+    top: 6px;
     border-top: 7px solid transparent;
     border-left: 7px solid white;
     border-bottom: 7px solid transparent;
@@ -36,4 +34,10 @@
 
 .colorationDropArrow {
     border-color: black;
+}
+
+.rotate180 {
+    transition: all 1s linear;
+    transform-origin: center;
+    transform: rotate(180deg);
 }

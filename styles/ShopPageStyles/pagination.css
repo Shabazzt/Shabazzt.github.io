@@ -1,0 +1,13 @@
+.pagination {
+    width: 100%;
+    text-align: center;
+    margin: 35px 0;
+}
+
+.pagination button {
+    position: relative;
+    background: none;
+    padding: 5px;
+    cursor: pointer;
+    color: #939393;
+}

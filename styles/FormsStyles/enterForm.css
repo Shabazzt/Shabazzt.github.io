@@ -8,11 +8,8 @@
     border-radius: 20px;
     justify-content: center;
     z-index: 4;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    top: 15vh;
+    right: 35vw;
 }
 
 #enterForm.opened {
@@ -44,7 +41,7 @@
 }
 
 #enterForm input[type="submit"] {
-    background-color: #8db300;
+    background: linear-gradient(-180deg, #9fbf00, #80ab00 91%);
     color: white;
     text-transform: uppercase;
     font-size: 15px;
@@ -54,7 +51,8 @@
 }
 
 #enterForm input[type="submit"]:hover {
-    background-color: #00FF00;
+    background: linear-gradient(180deg, #a7c900, #88b500);
+    cursor: pointer;
 }
 
 .titleText {
@@ -90,12 +88,12 @@
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
-    background-color: #AFEEEE;
+    background: linear-gradient(-180deg, #9fbf00, #80ab00 91%);
     border: none;
     border-radius: 10px;
     color: white;
 }
 
 .enterFormActionButton:hover {
-    background-color: #7FFFD4;
+    background: linear-gradient(180deg, #a7c900, #88b500);
 }

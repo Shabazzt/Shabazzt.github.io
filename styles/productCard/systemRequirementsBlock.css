@@ -1,0 +1,36 @@
+.systemRequirements {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.systemRequirementsName {
+    width: 20%;
+}
+
+.systemRequirements .detailsCategory {
+    margin: 5px;
+}
+
+.systemRequirementsHeader {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.requirement {
+    width: 100%;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.systemRequirementsOption {
+    display: flex;
+    flex-direction: column;
+}
+
+.systemRequirementsSummary {
+    display: flex;
+    width: 100%;
+}

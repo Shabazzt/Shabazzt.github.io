@@ -1,23 +1,20 @@
-.categoriesBtnBlock {
+.generalFilter {
     display: flex;
+    width: 100%;
+    margin: 100px 0 40px 0;
     position: relative;
-    width: 20%;
-    background-color: #e0e0e0;
+    justify-content: center;
 }
 
-.searchCategories {
+.generalFilterCategories {
     display: flex;
     position: relative;
     align-items: center;
-    width: 100%;
+    width: 20%;
     border-radius: 2px;
 }
 
-.searchCategories.closed {
-    display: none;
-}
-
-.searchCategoriesActionButton {
+.generalFilterTextWindow {
     position: relative;
     width: 90%;
     border: none;
@@ -25,34 +22,28 @@
     background-color: #e0e0e0;
 }
 
-.searchCategories label {
+.generalFilter label {
     position: relative;
-    width: 10%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.catalogSearchContainer form.search {
-    background-color: #DCDCDC;
-    border-radius: 0;
-    margin: 0;
+.transformY {
+    transition: transform 0.5s;
+    transform: translateY(10px);
 }
 
-.catalogSearchContainer form.search input[type="search"] {
-    background-color: #DCDCDC;
-}
-
-.dropDownMenu.opened {
-    display: flex;
-}
-
-.categoriesBtnBlock .dropDownMenu {
-    position: absolute;
-    width: 100%;
+.generalFilter .dropDownMenu {
+    width: 20%;
     top: 40px;
-    left: 0;
-    border-radius: 0;
-    background-color: white;
-    color: #C0C0C0;
+    right: 40%;
+    border-radius: 2px;
+    background-color: #e9e9e9;
+}
+
+.generalFilter .dropDownMenu li {
+    margin: 0px 10px 0px 10px;
+    padding: 5px 0;
 }

@@ -1,28 +1,30 @@
     .dropDownMenu {
         display: none;
         position: absolute;
-        width: 190px;
+        width: 255px;
         top: 60px;
         right: -50px;
         z-index: 1;
-        background-color: #696969;
+        background-color: whitesmoke;
         border-radius: 10px;
     }
     
-    .dropDownMenu a {
-        color: white;
+    .dropDownMenu li a {
+        color: #737373;
     }
     
     .dropDownMenu li {
-        margin: 10px 10px;
+        margin: 10px 12px;
         position: relative;
-        padding: 5px;
+        padding: 5px 0;
+        width: 100%;
     }
     
     .dropDownMenu label {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     
     .dropDownMenu li:hover a {
@@ -50,7 +52,7 @@
     
     .actionButton {
         position: relative;
-        background-color: #708090;
+        background: linear-gradient(-180deg, #9fbf00, #80ab00 91%);
         width: 150px;
         border: 2px;
         margin: 10px 20px;
@@ -60,5 +62,17 @@
     
     .actionButton:hover {
         cursor: pointer;
-        background-color: #C0C0C0;
+        background: linear-gradient(180deg, #a7c900, #88b500);
+        ;
+    }
+    
+    .dropDownMenu.opened {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .navigationTitleSection:hover .dropDownMenu.flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }

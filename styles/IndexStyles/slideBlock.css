@@ -21,7 +21,7 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: normal;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-delay: 5s;
     transition: transform;
 }

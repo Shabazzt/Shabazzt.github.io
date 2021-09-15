@@ -63,6 +63,7 @@ label {
     align-items: center;
     margin: 5px 0 5px 15px;
     padding: 0;
+    width: 100%;
 }
 
 .sortBy .dropDownMenu label {

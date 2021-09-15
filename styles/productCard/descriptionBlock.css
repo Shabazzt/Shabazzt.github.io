@@ -64,7 +64,7 @@
     max-width: 100%;
 }
 
-li {
+.description li {
     color: black;
     list-style: disc;
 }
@@ -84,9 +84,10 @@ b {
 }
 
 .summarySection a {
+    width: 100%;
     color: black;
-    text-decoration: underline;
     position: relative;
+    margin: 15px 0;
 }
 
 .details {
@@ -95,6 +96,8 @@ b {
 }
 
 .detailsCategory {
+    display: flex;
+    align-items: center;
     width: 110px;
     color: rgba(33, 33, 33, .7);
     margin: 0 0 0 5px;
@@ -108,4 +111,13 @@ b {
 .detailsContent {
     width: calc(100% - 110px);
     text-align: start;
+}
+
+.flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detailsContent.flexWrap a:hover {
+    text-decoration: underline;
 }

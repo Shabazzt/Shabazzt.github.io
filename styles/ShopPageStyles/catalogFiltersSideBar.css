@@ -30,7 +30,7 @@
 .filterItemTitle {
     position: relative;
     width: 85%;
-    margin: 5px 0 5px 5px;
+    padding: 5px 0 5px 5px;
 }
 
 .filterItem[downArrow]::after,
@@ -40,15 +40,11 @@
     right: 0;
 }
 
-.filterItemOptions {
+.filterItem label {
     width: 100%;
 }
 
-.filterItemOptions label {
-    width: 100%;
-}
-
-.filterItemOptions .dropDownMenu {
+.filterItem .dropDownMenu {
     position: relative;
     width: 100%;
     top: 0;
@@ -57,7 +53,7 @@
     border-radius: 0;
 }
 
-.filterItemOptions .dropDownMenu li {
+.filterItem .dropDownMenu li {
     display: flex;
     width: 100%;
     align-items: center;

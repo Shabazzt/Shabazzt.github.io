@@ -7,11 +7,8 @@
     border-radius: 20px;
     justify-content: center;
     z-index: 4;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    top: 15vh;
+    right: 35vw;
 }
 
 #registrationForm.opened {
@@ -43,7 +40,7 @@
 }
 
 #registrationForm input[type="submit"] {
-    background-color: #8db300;
+    background: linear-gradient(-180deg, #9fbf00, #80ab00 91%);
     color: white;
     border-radius: 10px;
     border: none;
@@ -55,7 +52,7 @@
 }
 
 #registrationForm input[type="submit"]:hover {
-    background-color: #00FF00;
+    background: linear-gradient(180deg, #a7c900, #88b500)
 }
 
 .titleText {
