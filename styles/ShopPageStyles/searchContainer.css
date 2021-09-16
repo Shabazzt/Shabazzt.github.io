@@ -1,3 +1,9 @@
+.catalogMainContent {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
 .generalFilter {
     display: flex;
     width: 100%;
