@@ -1,0 +1,17 @@
+@media (max-width:930px) {
+    .header .burger-menu {
+        display: flex;
+    }
+    .navigation {
+        display: none;
+    }
+    .header {
+        justify-content: space-between;
+    }
+    .logo {
+        display: none;
+    }
+    .productCardTitle {
+        font-size: 18px;
+    }
+}

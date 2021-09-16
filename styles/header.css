@@ -42,6 +42,10 @@
     min-width: 56px;
 }
 
+.navigationTitleSection.closed {
+    display: none;
+}
+
 .navigationTitleSection a[downArrow]:hover {
     transform: scale(1.2);
     color: black;
@@ -51,4 +55,12 @@
 #basketHeaderIcon {
     position: relative;
     margin: 0 5px;
+    min-width: 36px;
+}
+
+.forAdoptation {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0 20px 0 0;
 }

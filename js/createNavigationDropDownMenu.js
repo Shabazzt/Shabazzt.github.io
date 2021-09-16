@@ -3,12 +3,14 @@ const aboutUs = document.getElementById('aboutUs');
 const community = document.getElementById('community');
 const shop = document.getElementById('shop');
 const support = document.getElementById('support');
+const more = document.getElementById('more');
 /* Массивы*/
 const dropDowmMenuOptionsArr = {
     aboutUs: ['История', 'Достижения', 'Проекты', 'Присоедениться к команде'],
     community: ['Все форумы', 'Горячие темы', 'Вопросы и ответы', 'Отзывы и пожелания'],
     shop: ['Новые игры', 'Популярные', 'Со скидкой', 'Экшен', 'Приключение', 'Инди', 'Ролевые', 'Шутеры', 'Симуляторы', 'Спорт и гонки', 'Стратегии', 'Фильмы для геймеров', 'Смотреть все игры'],
-    support: ['Технические проблемы с игрой', 'Заказы и оплата', 'Учетная запись и сайт', 'Загрузка']
+    support: ['Технические проблемы с игрой', 'Заказы и оплата', 'Учетная запись и сайт', 'Загрузка'],
+    more: ['История', 'Достижения', 'Проекты', 'Присоедениться к команде', 'Все форумы', 'Горячие темы', 'Вопросы и ответы', 'Отзывы и пожелания', 'Технические проблемы с игрой', 'Заказы и оплата', 'Учетная запись и сайт', 'Загрузка']
 };
 
 function createDropDownMenu(elementId) {
@@ -29,3 +31,4 @@ createDropDownMenu('aboutUs');
 createDropDownMenu('community');
 createDropDownMenu('shop');
 createDropDownMenu('support');
+createDropDownMenu('more');

@@ -22,7 +22,6 @@
     flex-wrap: wrap;
     position: relative;
     width: 100%;
-    min-width: 580px;
     border-bottom: 1px solid #e6e6e6;
     margin: 10px 0;
 }

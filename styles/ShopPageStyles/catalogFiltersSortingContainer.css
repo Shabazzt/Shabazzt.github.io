@@ -1,6 +1,5 @@
 .catalogFiltersSorting {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -74,6 +73,6 @@ label {
     display: flex;
     position: relative;
     width: 10%;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }

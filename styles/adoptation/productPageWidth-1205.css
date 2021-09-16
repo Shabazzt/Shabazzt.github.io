@@ -1,0 +1,17 @@
+@media (max-width:1205px) {
+    #more.navigationTitleSection {
+        display: flex;
+    }
+    #aboutUs.navigationTitleSection {
+        display: none;
+    }
+    #community.navigationTitleSection {
+        display: none;
+    }
+    #support.navigationTitleSection {
+        display: none;
+    }
+    .navigation {
+        min-width: 325px;
+    }
+}

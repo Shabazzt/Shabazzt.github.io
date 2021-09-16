@@ -1,0 +1,127 @@
+@media (max-width:920px) {
+    .productActions {
+        position: relative;
+        width: 100%;
+    }
+    .productCardBasicsInfo {
+        width: 100%;
+    }
+    .productCardBasicsInfoContainer {
+        flex-wrap: wrap;
+    }
+    .productCardCarousele {
+        display: none;
+    }
+    .changeSlide {
+        display: none;
+    }
+    .descriptionBlock {
+        flex-wrap: wrap;
+    }
+    .description {
+        width: 100%;
+    }
+    .summarySection {
+        width: 100%;
+    }
+    .extraInformation {
+        flex-wrap: wrap;
+    }
+    .info {
+        width: 100%;
+        justify-content: space-around;
+        margin: 15px 0;
+    }
+    .social {
+        width: 100%;
+    }
+    .textLawInformation {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px 0;
+    }
+    .license {
+        text-align: center;
+        margin: 0;
+    }
+    .filtersToggle {
+        display: none;
+    }
+    .basket {
+        min-width: 450px;
+    }
+    .productsList {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .catalogFiltersSideBar {
+        width: 275px;
+        margin: 5px 0 0 0px;
+    }
+    .filtersStatus {
+        margin: 0 0 0 30px;
+    }
+    .slidesBlock img {
+        width: 450px;
+        height: 280px;
+        animation-name: slide-900;
+    }
+    .discountNowBlock {
+        grid-template-areas: "post-1 post-2" "post-3 post-4";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #newsCarousele {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+@keyframes slide-900 {
+    0% {
+        transform: translateX(0);
+    }
+    6% {
+        transform: translateX(-470px);
+    }
+    12.5% {
+        transform: translateX(-470px);
+    }
+    19% {
+        transform: translateX(-940px);
+    }
+    25.4% {
+        transform: translateX(-940px);
+    }
+    31.9% {
+        transform: translateX(-1410px);
+    }
+    38.4% {
+        transform: translateX(-1410px);
+    }
+    44.9% {
+        transform: translateX(-1880px);
+    }
+    51.4% {
+        transform: translateX(-1880px);
+    }
+    57.9% {
+        transform: translateX(-2350px);
+    }
+    64.4% {
+        transform: translateX(-2350px);
+    }
+    70.9% {
+        transform: translateX(-2820px);
+    }
+    77.4% {
+        transform: translateX(-2820px);
+    }
+    83.9% {
+        transform: translateX(-3290px);
+    }
+    90.4% {
+        transform: translateX(-3290px);
+    }
+}
